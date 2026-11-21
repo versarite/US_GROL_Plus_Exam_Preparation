@@ -1,0 +1,4964 @@
+[
+  {
+    "id": "8-1A1",
+    "question": "Choose the most correct statement containing the parameters which control the size of the target echo.",
+    "choices": [
+      "Transmitted power, antenna effective area, transmit and receive losses, RADAR cross section of the target, range to target.",
+      "Height of antenna, power radiated, size of target, receiver gain, pulse width.",
+      "Power radiated, antenna gain, size of target, shape of target, pulse width, receiver gain.",
+      "Magnetron gain, antenna gain, size of target, range to target, wave-guide loss."
+    ],
+    "correct": 0,
+    "explanation": "The RADAR range equation: received echo power depends on transmitted power, antenna gain and effective area, system losses, the target's RADAR cross section, and range (it falls as 1/R⁴).",
+    "choice_notes": [
+      "",
+      "Antenna height affects the radar horizon, not echo strength. Receiver gain amplifies the echo but doesn't change its size.",
+      "Receiver gain and pulse width don't change the received echo power.",
+      "Magnetron 'gain' isn't a term (it's an oscillator)."
+    ]
+  },
+  {
+    "id": "8-1A2",
+    "question": "Which of the following has NO effect on the maximum range capability?",
+    "choices": [
+      "Carrier frequency.",
+      "Recovery time.",
+      "Pulse repetition frequency.",
+      "Receiver sensitivity."
+    ],
+    "correct": 1,
+    "explanation": "Maximum range depends on power, frequency, PRF (time to listen) and receiver sensitivity. Recovery time (how fast the receiver recovers after the transmit pulse) affects minimum range, not maximum range.",
+    "choice_notes": [
+      "Frequency affects attenuation and antenna gain, and so range.",
+      "",
+      "PRF limits maximum UNAMBIGUOUS range (time to listen).",
+      "Sensitivity sets the weakest detectable echo, so it limits range."
+    ]
+  },
+  {
+    "id": "8-1A3",
+    "question": "What type of transmitter power is measured over a period of time?",
+    "choices": [
+      "Average.",
+      "Peak.",
+      "Reciprocal.",
+      "Return."
+    ],
+    "correct": 0,
+    "explanation": "Average power is the power averaged over the whole pulse cycle: peak power x duty cycle. Peak power is the power during the pulse only.",
+    "choice_notes": [
+      "",
+      "Peak: power during the pulse only.",
+      "Not a power type.",
+      "Not a transmitter power type."
+    ]
+  },
+  {
+    "id": "8-1A4",
+    "question": "What RADAR component controls timing throughout the system?",
+    "choices": [
+      "Power supply.",
+      "Indicator.",
+      "Synchronizer.",
+      "Receiver."
+    ],
+    "correct": 2,
+    "explanation": "The synchronizer (timer) generates the trigger that fires the modulator and starts the display sweep, keeping the whole RADAR in step.",
+    "choice_notes": [
+      "Power supply: supplies energy, no timing.",
+      "Indicator: displays, but follows the synchronizer's timing.",
+      "",
+      "Receiver: amplifies echoes."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-1A5",
+    "question": "Which of the following components allows the use of a single antenna for both transmitting and receiving?",
+    "choices": [
+      "Mixer.",
+      "Duplexer.",
+      "Synchronizer.",
+      "Modulator."
+    ],
+    "correct": 1,
+    "explanation": "The duplexer (TR/ATR switch or circulator) connects the antenna to the transmitter during the pulse and to the receiver between pulses.",
+    "choice_notes": [
+      "Mixer: converts the echo to IF.",
+      "",
+      "Synchronizer: timing.",
+      "Modulator: drives the magnetron with HV pulses."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-1A6",
+    "question": "The sweep frequency of a RADAR indicator is determined by what parameter?",
+    "choices": [
+      "Carrier frequency.",
+      "Pulse width.",
+      "Duty cycle.",
+      "Pulse repetition frequency."
+    ],
+    "correct": 3,
+    "explanation": "Each transmitted pulse starts a new sweep on the display, so the sweep frequency equals the pulse repetition frequency.",
+    "choice_notes": [
+      "Carrier frequency (GHz) has nothing to do with the sweep.",
+      "Pulse width sets resolution and minimum range.",
+      "Duty cycle relates average to peak power.",
+      ""
+    ]
+  },
+  {
+    "id": "8-2A1",
+    "question": "A radio wave will travel a distance of three nautical miles in:",
+    "choices": [
+      "6.17 microseconds.",
+      "37.0 microseconds.",
+      "22.76 microseconds.",
+      "18.51 microseconds."
+    ],
+    "correct": 3,
+    "explanation": "Radio waves travel 1 nautical mile in about 6.17 µs one way. 3 nm x 6.17 µs = 18.51 µs."
+  },
+  {
+    "id": "8-2A2",
+    "question": "One RADAR mile is how many microseconds?",
+    "choices": [
+      "6.2",
+      "528.0",
+      "12.34",
+      "0.186"
+    ],
+    "correct": 2,
+    "explanation": "A RADAR mile is the round-trip time to a target 1 nm away: 2 x 6.17 = 12.34 µs."
+  },
+  {
+    "id": "8-2A3",
+    "question": "RADAR range is measured by the constant:",
+    "choices": [
+      "150 meters per microsecond.",
+      "150 yards per microsecond.",
+      "300 yards per microsecond.",
+      "18.6 miles per microsecond."
+    ],
+    "correct": 0,
+    "explanation": "Light travels 300 m/µs, but the pulse goes out and back. Each microsecond of echo delay therefore corresponds to 150 m of range."
+  },
+  {
+    "id": "8-2A4",
+    "question": "If a target is 5 miles away, how long does it take for the RADAR echo to be received back at the antenna?",
+    "choices": [
+      "51.4 microseconds.",
+      "123 microseconds.",
+      "30.75 microseconds.",
+      "61.7 microseconds."
+    ],
+    "correct": 3,
+    "explanation": "Round trip = 5 nm x 12.34 µs per nm = 61.7 µs."
+  },
+  {
+    "id": "8-2A5",
+    "question": "How long would it take for a RADAR pulse to travel to a target 10 nautical miles away and return to the RADAR receiver?",
+    "choices": [
+      "12.34 microseconds.",
+      "1.234 microseconds.",
+      "123.4 microseconds.",
+      "10 microseconds."
+    ],
+    "correct": 2,
+    "explanation": "Round trip = 10 nm x 12.34 µs = 123.4 µs."
+  },
+  {
+    "id": "8-2A6",
+    "question": "What is the distance in nautical miles to a target if it takes 308.5 microseconds for the RADAR pulse to travel from the RADAR antenna to the target and back.",
+    "choices": [
+      "12.5 nautical miles.",
+      "25 nautical miles.",
+      "50 nautical miles.",
+      "2.5 nautical miles."
+    ],
+    "correct": 1,
+    "explanation": "Range = 308.5 µs / 12.34 µs per nm = 25 nm."
+  },
+  {
+    "id": "8-3A1",
+    "question": "Frequencies generally used for marine RADAR are in the ___ part of the radio spectrum.",
+    "choices": [
+      "UHF",
+      "EHF",
+      "SHF",
+      "VHF"
+    ],
+    "correct": 2,
+    "explanation": "Marine RADARs operate at 3 GHz (S-band) and 9 GHz (X-band), both in the SHF (3 to 30 GHz) range.",
+    "choice_notes": [
+      "UHF (0.3-3 GHz): used by some long-range RADARs, not marine.",
+      "EHF (30-300 GHz): very short range, high attenuation.",
+      "",
+      "VHF: wavelength too long for compact RADAR antennas."
+    ],
+    "explanation_image": "grol_radar_bands.png"
+  },
+  {
+    "id": "8-3A2",
+    "question": "Practical RADAR operation requires the use of microwave frequencies so that:",
+    "choices": [
+      "Stronger target echoes will be produced.",
+      "Ground clutter interference will be minimized.",
+      "Interference to other communication systems will be eliminated.",
+      "Non-directional antennas can be used for both transmitting and receiving."
+    ],
+    "correct": 0,
+    "explanation": "At microwave wavelengths, targets are many wavelengths in size and reflect strongly, and a compact antenna can form a narrow beam. Both give strong, well-defined echoes.",
+    "choice_notes": [
+      "",
+      "Clutter isn't minimized by microwaves.",
+      "Not the reason.",
+      "RADAR needs DIRECTIONAL antennas."
+    ]
+  },
+  {
+    "id": "8-3A3",
+    "question": "An S-band RADAR operates in which frequency band?",
+    "choices": [
+      "1 - 2 GHz.",
+      "4 - 8 GHz.",
+      "8 - 12 GHz.",
+      "2 - 4 GHz."
+    ],
+    "correct": 3,
+    "explanation": "S-band is 2 to 4 GHz (marine S-band RADAR ≈ 3 GHz, 10 cm).",
+    "choice_notes": [
+      "1-2 GHz = L-band (DME, transponders, GPS).",
+      "4-8 GHz = C-band.",
+      "8-12 GHz = X-band.",
+      ""
+    ],
+    "explanation_image": "grol_radar_bands.png"
+  },
+  {
+    "id": "8-3A4",
+    "question": "A RADAR operating at a frequency of 3 GHz has a wavelength of approximately:",
+    "choices": [
+      "1 centimeter.",
+      "10 centimeters.",
+      "3 centimeters.",
+      "30 centimeters."
+    ],
+    "correct": 1,
+    "explanation": "λ = c / f = 300,000,000 / 3,000,000,000 = 0.1 m = 10 cm."
+  },
+  {
+    "id": "8-3A5",
+    "question": "The major advantage of an S-band RADAR over an X-band RADAR is:",
+    "choices": [
+      "It is less affected by weather conditions.",
+      "It has greater bearing resolution.",
+      "It is mechanically less complex.",
+      "It has greater power output."
+    ],
+    "correct": 0,
+    "explanation": "The longer 10 cm wavelength of S-band is attenuated and scattered much less by rain, fog and sea clutter than X-band's 3 cm.",
+    "choice_notes": [
+      "",
+      "X-band has BETTER bearing resolution for the same antenna size.",
+      "No major difference.",
+      "Not inherent."
+    ],
+    "explanation_image": "grol_radar_bands.png"
+  },
+  {
+    "id": "8-3A6",
+    "question": "An X band RADAR operates in which frequency band?",
+    "choices": [
+      "1 - 2 GHz.",
+      "2 - 4 GHz.",
+      "4 - 8 GHz.",
+      "8 - 12 GHz."
+    ],
+    "correct": 3,
+    "explanation": "X-band is 8 to 12 GHz (marine X-band RADAR ≈ 9.4 GHz, 3 cm).",
+    "choice_notes": [
+      "L-band.",
+      "S-band (3 GHz marine RADAR).",
+      "C-band.",
+      ""
+    ],
+    "explanation_image": "grol_radar_bands.png"
+  },
+  {
+    "id": "8-4A1",
+    "question": "A pulse RADAR has a pulse repetition frequency (PRF) of 400 Hz, a pulse width of 1 microsecond, and a peak power of 100 kilowatts. The average power of the RADAR transmitter is:",
+    "choices": [
+      "25 watts.",
+      "40 watts.",
+      "250 watts.",
+      "400 watts."
+    ],
+    "correct": 1,
+    "explanation": "Duty cycle = pulse width x PRF = 1 µs x 400 = 0.0004. Average power = 100 kW x 0.0004 = 40 W."
+  },
+  {
+    "id": "8-4A2",
+    "question": "A shipboard RADAR transmitter has a pulse repetition frequency (PRF) of 1,000 Hz, a pulse width of 0.5 microseconds, peak power of 150 KW, and a minimum range of 75 meters. Its duty cycle is:",
+    "choices": [
+      "0.5",
+      "0.05",
+      "0.005",
+      "0.0005"
+    ],
+    "correct": 3,
+    "explanation": "Duty cycle = pulse width x PRF = 0.5 µs x 1000 Hz = 0.0005. The other numbers are distractors."
+  },
+  {
+    "id": "8-4A3",
+    "question": "A pulse RADAR transmits a 0.5 microsecond RF pulse with a peak power of 100 kilowatts every 1600 microseconds. This RADAR has:",
+    "choices": [
+      "An average power of 31.25 watts.",
+      "A PRF of 3,200.",
+      "A maximum range of 480 kilometers.",
+      "A duty cycle of 3.125 percent."
+    ],
+    "correct": 0,
+    "explanation": "Duty cycle = 0.5 µs / 1600 µs = 0.0003125. Average power = 100 kW x 0.0003125 = 31.25 W. (PRF = 625 Hz, duty cycle = 0.031 %.)"
+  },
+  {
+    "id": "8-4A4",
+    "question": "If a RADAR transmitter has a pulse repetition frequency (PRF) of 900 Hz, a pulse width of 0.5 microseconds and a peak power of 15 kilowatts, what is its average power output?",
+    "choices": [
+      "15 kilowatts.",
+      "13.5 watts.",
+      "6.75 watts.",
+      "166.67 watts."
+    ],
+    "correct": 2,
+    "explanation": "Duty cycle = 0.5 µs x 900 = 0.00045. Average power = 15 kW x 0.00045 = 6.75 W."
+  },
+  {
+    "id": "8-4A5",
+    "question": "What is the average power if the RADAR set has a PRF of 1000 Hz, a pulse width of 1 microsecond, and a peak power rating of 100 kilowatts?",
+    "choices": [
+      "10 watts.",
+      "100 watts.",
+      "1,000 watts.",
+      "None of these."
+    ],
+    "correct": 1,
+    "explanation": "Duty cycle = 1 µs x 1000 = 0.001. Average power = 100 kW x 0.001 = 100 W."
+  },
+  {
+    "id": "8-4A6",
+    "question": "A search RADAR has a pulse width of 1.0 microsecond, a pulse repetition frequency (PRF) of 900 Hz, and an average power of 18 watts. The unit’s peak power is:",
+    "choices": [
+      "200 kilowatts.",
+      "180 kilowatts.",
+      "20 kilowatts.",
+      "2 kilowatts."
+    ],
+    "correct": 2,
+    "explanation": "Duty cycle = 1 µs x 900 = 0.0009. Peak power = average / duty = 18 W / 0.0009 = 20 kW."
+  },
+  {
+    "id": "8-5A1",
+    "question": "For a range of 5 nautical miles, the RADAR pulse repetition frequency should be:",
+    "choices": [
+      "16.2 Hz or more.",
+      "16.2 MHz or less.",
+      "1.62 kHz or more.",
+      "16.2 kHz or less."
+    ],
+    "correct": 3,
+    "explanation": "Each echo must return before the next pulse: PRI ≥ 5 nm x 12.34 µs = 61.7 µs, so PRF ≤ 1 / 61.7 µs = 16.2 kHz."
+  },
+  {
+    "id": "8-5A2",
+    "question": "For a range of 100 nautical miles, the RADAR pulse repetition frequency should be:",
+    "choices": [
+      "8.1 kHz or less.",
+      "810 Hz or less.",
+      "8.1 kHz or more.",
+      "81 kHz or more."
+    ],
+    "correct": 1,
+    "explanation": "PRI ≥ 100 x 12.34 µs = 1234 µs, so PRF ≤ 1/1234 µs ≈ 810 Hz."
+  },
+  {
+    "id": "8-5A3",
+    "question": "The minimum range of a RADAR is determined by:",
+    "choices": [
+      "The frequency of the RADAR transmitter.",
+      "The pulse repetition rate.",
+      "The transmitted pulse width.",
+      "The pulse repetition frequency."
+    ],
+    "correct": 2,
+    "explanation": "While the pulse is being transmitted the receiver is blocked, so targets closer than half the pulse length (pulse width x 150 m/µs) can't be seen. Pulse width sets minimum range.",
+    "choice_notes": [
+      "Frequency doesn't set minimum range.",
+      "PRR limits MAXIMUM range.",
+      "",
+      "PRF = PRR, which limits maximum range."
+    ]
+  },
+  {
+    "id": "8-5A4",
+    "question": "Short range RADARs would most likely transmit:",
+    "choices": [
+      "Narrow pulses at a fast rate.",
+      "Narrow pulses at a slow rate.",
+      "Wide pulses at a fast rate.",
+      "Wide pulses at a slow rate."
+    ],
+    "correct": 0,
+    "explanation": "Short range needs narrow pulses (small minimum range, good resolution) and can use a fast repetition rate, because echoes return quickly.",
+    "choice_notes": [
+      "",
+      "Short-range sets can use a fast rate, giving more hits on each target.",
+      "Wide pulses increase minimum range and reduce resolution.",
+      "Wide pulses at a slow rate = long-range settings."
+    ]
+  },
+  {
+    "id": "8-5A5",
+    "question": "For a range of 30 nautical miles, the RADAR pulse repetition frequency should be:",
+    "choices": [
+      "0.27 kHz or less.",
+      "2.7 kHz or less.",
+      "27 kHz or more.",
+      "2.7 Hz or more."
+    ],
+    "correct": 1,
+    "explanation": "PRI ≥ 30 x 12.34 µs = 370 µs, so PRF ≤ 2.7 kHz."
+  },
+  {
+    "id": "8-5A6",
+    "question": "For a range of 10 nautical miles, the RADAR pulse repetition frequency (PRF) should be:",
+    "choices": [
+      "Approximately 8.1 kHz or less.",
+      "900 Hz.",
+      "18.1 kHz or more.",
+      "120.3 microseconds."
+    ],
+    "correct": 0,
+    "explanation": "PRI ≥ 10 x 12.34 µs = 123.4 µs, so PRF ≤ 8.1 kHz."
+  },
+  {
+    "id": "8-6A1",
+    "question": "If the PRF is 2500 Hz, what is the PRI?",
+    "choices": [
+      "40 microseconds.",
+      "400 microseconds.",
+      "250 microseconds.",
+      "800 microseconds."
+    ],
+    "correct": 1,
+    "explanation": "PRI = 1 / PRF = 1 / 2500 Hz = 0.0004 s = 400 µs."
+  },
+  {
+    "id": "8-6A2",
+    "question": "If the pulse repetition frequency (PRF) is 2000 Hz, what is the pulse repetition interval (PRI)?",
+    "choices": [
+      "0.05 seconds.",
+      "0.005 seconds.",
+      "0.0005 seconds.",
+      "0.00005 seconds."
+    ],
+    "correct": 2,
+    "explanation": "PRI = 1 / 2000 Hz = 0.0005 s (500 µs)."
+  },
+  {
+    "id": "8-6A3",
+    "question": "The pulse repetition rate (PRR) refers to:",
+    "choices": [
+      "The reciprocal of the duty cycle.",
+      "The pulse rate of the local oscillator tube.",
+      "The pulse rate of the klystron.",
+      "The pulse rate of the magnetron."
+    ],
+    "correct": 3,
+    "explanation": "PRR is the number of pulses per second, i.e. how often the magnetron is fired.",
+    "choice_notes": [
+      "Not the definition.",
+      "The LO runs continuously (CW).",
+      "The klystron is the receiver LO (CW).",
+      ""
+    ]
+  },
+  {
+    "id": "8-6A4",
+    "question": "If the RADAR unit has a pulse repetition frequency (PRF) of 2000 Hz and a pulse width of 0.05 microseconds, what is the duty cycle?",
+    "choices": [
+      "0.0001",
+      "0.0005",
+      "0.05",
+      "0.001"
+    ],
+    "correct": 0,
+    "explanation": "Duty cycle = 0.05 µs x 2000 Hz = 0.0001."
+  },
+  {
+    "id": "8-6A5",
+    "question": "Small targets are best detected by:",
+    "choices": [
+      "Short pulses transmitted at a fast rate.",
+      "Using J band frequencies.",
+      "Using a long pulse width with high output power.",
+      "All of these answers are correct."
+    ],
+    "correct": 2,
+    "explanation": "A long pulse at high power puts the most energy on the target, so the weak echo from a small target stands out above noise.",
+    "choice_notes": [
+      "Short pulses at a fast rate = good resolution, but less energy on target.",
+      "J-band isn't marine RADAR.",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "8-6A6",
+    "question": "What is the relationship between pulse repetition rate and pulse width?",
+    "choices": [
+      "Higher PRR with wider pulse width.",
+      "The pulse repetition rate does not change with the pulse width.",
+      "The pulse width does not change with the pulse repetition rate.",
+      "Lower PRR with wider pulse width."
+    ],
+    "correct": 3,
+    "explanation": "Wide pulses are used for long range, which needs a low PRR (time for echoes to return). Narrow pulses go with a high PRR at short range. A RADAR switches both together, keeping average power in check.",
+    "choice_notes": [
+      "Wide pulses need a LOW PRR (long range).",
+      "They're switched together.",
+      "They're switched together.",
+      ""
+    ]
+  },
+  {
+    "id": "8-7A1",
+    "question": "What component of a RADAR receiver is represented by block 46 in Fig. 8A1?",
+    "choices": [
+      "The ATR box.",
+      "The TR box.",
+      "The RF Attenuator.",
+      "The Crystal Detector."
+    ],
+    "correct": 1,
+    "explanation": "In Fig. 8A1 the receiver path runs waveguide → 46 → crystal detector (mixer). The first block protects the receiver from the transmitter pulse: the TR box.",
+    "figure": "8a1.png",
+    "choice_notes": [
+      "The ATR box sits in the transmitter branch and keeps echoes out of the magnetron.",
+      "",
+      "The RF attenuator is block 47 (magnetron sample to AFC).",
+      "The crystal detector (mixer) follows block 46."
+    ]
+  },
+  {
+    "id": "8-7A2",
+    "question": "A basic sample-and-hold circuit contains:",
+    "choices": [
+      "An analog switch and an amplifier.",
+      "An analog switch, a capacitor, and an amplifier.",
+      "An analog multiplexer and a capacitor.",
+      "An analog switch, a capacitor, amplifiers and input and output buffers."
+    ],
+    "correct": 3,
+    "explanation": "A sample-and-hold uses an analog switch to sample the signal onto a hold capacitor, with buffer amplifiers at input and output so the capacitor isn't loaded and holds the value.",
+    "choice_notes": [
+      "Missing the hold capacitor.",
+      "Missing the buffers.",
+      "A multiplexer selects inputs. It doesn't sample-and-hold.",
+      ""
+    ]
+  },
+  {
+    "id": "8-7A3",
+    "question": "When comparing a TTL and a CMOS NAND gate:",
+    "choices": [
+      "Both have active pull-up characteristics.",
+      "Both have three output states.",
+      "Both have comparable input power sourcing.",
+      "Both employ Schmitt diodes for increased speed capabilities."
+    ],
+    "correct": 0,
+    "explanation": "Standard TTL (totem-pole) and CMOS gates both drive their outputs actively high and low (active pull-up), unlike open-collector types.",
+    "choice_notes": [
+      "",
+      "Standard gates have 2 states. Tri-state is a special variant.",
+      "TTL inputs need current. CMOS inputs draw almost none.",
+      "Schottky diodes (not 'Schmitt') speed up LS-TTL. Schmitt triggers are input circuits."
+    ]
+  },
+  {
+    "id": "8-7A4",
+    "question": "Silicon crystals:",
+    "choices": [
+      "Are very sensitive to static electric charges.",
+      "Should be wrapped in lead foil for storage.",
+      "Tolerate very low currents.",
+      "All of these."
+    ],
+    "correct": 3,
+    "explanation": "Microwave mixer crystals are delicate: easily destroyed by static, stored in lead foil or shielding, and able to tolerate only small currents."
+  },
+  {
+    "id": "8-7A5",
+    "question": "Which is typical current for a silicon crystal used in a RADAR mixer or detector circuit?",
+    "choices": [
+      "3 mA",
+      "15 mA",
+      "50 mA",
+      "100 mA"
+    ],
+    "correct": 0,
+    "explanation": "A healthy RADAR mixer or detector crystal draws about 0.5 to 3 mA. Large currents burn it out."
+  },
+  {
+    "id": "8-7A6",
+    "question": "What component of a RADAR receiver is represented by block 47 in Fig. 8A1?",
+    "choices": [
+      "The ATR box.",
+      "The TR box.",
+      "The RF Attenuator.",
+      "The Crystal Detector."
+    ],
+    "correct": 2,
+    "explanation": "In Fig. 8A1 block 47 takes a small sample from the magnetron for the AFC path. An RF attenuator reduces it to a safe level for the AFC mixer.",
+    "figure": "8a1.png",
+    "choice_notes": [
+      "ATR: in the transmitter line.",
+      "TR: block 46 (receiver protection).",
+      "",
+      "Crystal detector: block 49 / the receiver mixer."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-8A1",
+    "question": "The basic frequency determining element in a Gunn oscillator is:",
+    "choices": [
+      "The power supply voltage.",
+      "The type of semiconductor used.",
+      "The resonant cavity.",
+      "The loading of the oscillator by the mixer."
+    ],
+    "correct": 2,
+    "explanation": "A Gunn diode supplies negative resistance, but its frequency is set by the resonant cavity it sits in.",
+    "choice_notes": [
+      "Voltage only fine-tunes it slightly.",
+      "GaAs is needed for the effect, but doesn't set the frequency.",
+      "",
+      "Loading pulls the frequency a little but doesn't set it."
+    ]
+  },
+  {
+    "id": "8-8A2",
+    "question": "Which of the following is not a method of analog-to-digital conversion?",
+    "choices": [
+      "Delta-sigma conversion.",
+      "Dynamic-range conversion.",
+      "Switched-capacitor conversion.",
+      "Dual-slope integration."
+    ],
+    "correct": 1,
+    "explanation": "Delta-sigma, switched-capacitor and dual-slope integration are real A/D methods. 'Dynamic-range conversion' isn't one.",
+    "choice_notes": [
+      "Delta-sigma: high-resolution oversampling ADC.",
+      "",
+      "Switched-capacitor: used in successive-approximation ADCs.",
+      "Dual-slope: an integrating ADC used in DMMs."
+    ]
+  },
+  {
+    "id": "8-8A3",
+    "question": "When comparing TTL and CMOS logic families, which of the following is true:",
+    "choices": [
+      "CMOS logic requires a supply voltage of 5 volts 20%, whereas TTL logic requires 5 volts 5%.",
+      "Unused inputs should be tied high or low as necessary especially in the CMOS family.",
+      "At higher operating frequencies, CMOS circuits consume almost as much power as TTL circuits.",
+      "When a CMOS input is held low, it sources current into whatever it drives."
+    ],
+    "correct": 2,
+    "explanation": "CMOS draws current mainly when switching, so its power rises with frequency. At high clock rates it can consume about as much as TTL.",
+    "choice_notes": [
+      "CMOS has a WIDE supply range (3-15 V for the 4000 series).",
+      "True practice, but not the pool's answer.",
+      "",
+      "A low CMOS input draws/sources practically no current."
+    ]
+  },
+  {
+    "id": "8-8A4",
+    "question": "The primary operating frequency of a reflex klystron is controlled by the:",
+    "choices": [
+      "Dimensions of the resonant cavity.",
+      "Level of voltage on the control grid.",
+      "Voltage applied to the cavity grids.",
+      "Voltage applied to the repeller plate."
+    ],
+    "correct": 0,
+    "explanation": "A reflex klystron's basic frequency is set by its resonant cavity's dimensions. Repeller voltage only fine-tunes it.",
+    "choice_notes": [
+      "",
+      "A reflex klystron has no control grid.",
+      "Grid voltages affect bunching.",
+      "Repeller voltage only FINE-tunes."
+    ]
+  },
+  {
+    "id": "8-8A5",
+    "question": "A Gunn diode oscillator takes advantage of what effect?",
+    "choices": [
+      "Negative resistance.",
+      "Avalanche transit time.",
+      "Bulk-effect.",
+      "Negative resistance and bulk-effect."
+    ],
+    "correct": 3,
+    "explanation": "A Gunn diode uses the bulk (transferred-electron) effect in GaAs, which produces a negative-resistance region. No P-N junction is involved.",
+    "choice_notes": [
+      "Only half the story.",
+      "Avalanche transit time is the IMPATT diode.",
+      "Only half the story.",
+      ""
+    ]
+  },
+  {
+    "id": "8-8A6",
+    "question": "Fine adjustments of a reflex klystron are accomplished by:",
+    "choices": [
+      "Adjusting the flexible wall of the cavity.",
+      "Varying the repeller voltage.",
+      "Adjusting the AFC control system.",
+      "Varying the cavity grid potential."
+    ],
+    "correct": 1,
+    "explanation": "Changing the repeller voltage changes the electrons' transit time, which fine-tunes the frequency electronically. That's how AFC tunes a klystron local oscillator.",
+    "choice_notes": [
+      "The cavity wall gives COARSE (mechanical) tuning.",
+      "",
+      "The AFC adjusts the repeller voltage automatically, but the fine adjustment itself is the repeller voltage.",
+      "Not the tuning element."
+    ]
+  },
+  {
+    "id": "8-9A1",
+    "question": "Blocking oscillators operate on the formula of:",
+    "choices": [
+      "T = R x C.",
+      "I = E/R.",
+      "By using the receiver’s AGC.",
+      "None of the above are correct."
+    ],
+    "correct": 0,
+    "explanation": "A blocking oscillator's pulse spacing and width are governed by an RC time constant (T = R x C) in its base or grid circuit.",
+    "choice_notes": [
+      "",
+      "Ohm's law, not oscillator timing.",
+      "AGC controls gain.",
+      ""
+    ]
+  },
+  {
+    "id": "8-9A2",
+    "question": "The block diagram of a typical RADAR system microprocessor is shown in Fig. 8A2. Choose the most correct statement regarding this system.",
+    "choices": [
+      "The ALU is used for address decoding.",
+      "The Memory and I/O communicate with peripherals.",
+      "The control unit executes arithmetic manipulations.",
+      "The internal bus is used simultaneously by all units."
+    ],
+    "correct": 1,
+    "explanation": "In Fig. 8A2 the 'Memory and I/O interface' connects the internal bus to the external memory and I/O bus, so it's the route to peripherals.",
+    "figure": "8a2.png",
+    "choice_notes": [
+      "The ALU does arithmetic and logic.",
+      "",
+      "The control unit decodes and sequences instructions.",
+      "A bus carries one transfer at a time."
+    ]
+  },
+  {
+    "id": "8-9A3",
+    "question": "The phantastron circuit is capable of:",
+    "choices": [
+      "Stabilizing the magnetron.",
+      "Preventing saturation of the RADAR receiver.",
+      "Being used to control repeller voltage in the AFC system.",
+      "Developing a linear ramp voltage when triggered by an external source."
+    ],
+    "correct": 3,
+    "explanation": "A phantastron is a triggered sweep generator: when triggered it produces a very linear ramp (Miller run-down), used for range sweeps and delays.",
+    "choice_notes": [
+      "Not a magnetron stabilizer.",
+      "That's STC/AGC.",
+      "That's the AFC discriminator.",
+      ""
+    ]
+  },
+  {
+    "id": "8-9A4",
+    "question": "The block diagram of a typical RADAR system microprocessor is shown in Fig. 8A2. Choose the most correct statement regarding this system.",
+    "choices": [
+      "The ALU executes arithmetic manipulations.",
+      "The ALU is used for address decoding.",
+      "General registers are used for arithmetic manipulations.",
+      "Address pointers are contained in the control unit."
+    ],
+    "correct": 0,
+    "explanation": "The ALU (arithmetic logic unit) performs the arithmetic and logic operations. The control unit decodes instructions, and registers hold data and addresses.",
+    "figure": "8a2.png",
+    "choice_notes": [
+      "",
+      "Address decoding is separate logic.",
+      "Registers hold data. The ALU computes.",
+      "Address pointers are in registers."
+    ]
+  },
+  {
+    "id": "8-9A5",
+    "question": "In the Line-Driver/Coax/Line-receiver circuit shown in Fig. 8A3, what component is represented by the blank box marked \"X\"?",
+    "choices": [
+      "25-ohm resistor.",
+      "51-ohm resistor.",
+      "10-microhm inductor.",
+      "20-microhm inductor."
+    ],
+    "correct": 1,
+    "explanation": "Fig. 8A3 drives a 50 Ω coax. To avoid reflections, the receiving end must be terminated in about the cable's impedance: block X is a 51 Ω resistor (the nearest standard value).",
+    "figure": "8a3.png"
+  },
+  {
+    "id": "8-9A6",
+    "question": "Choose the most correct statement:",
+    "choices": [
+      "The magnetron anode is a low voltage circuit.",
+      "The anode of the magnetron carries high voltage.",
+      "The filament of the magnetron carries dangerous voltages.",
+      "The magnetron filament is a low voltage circuit."
+    ],
+    "correct": 2,
+    "explanation": "In marine magnetrons the anode is grounded and the cathode, together with its heater filament, sits at a high negative voltage (thousands of volts). The filament wiring is therefore dangerous.",
+    "choice_notes": [
+      "The anode is grounded, so it's safe, but it isn't a 'low voltage circuit' in function.",
+      "In marine magnetrons the anode is GROUNDED.",
+      "",
+      "The filament sits at the full negative cathode high voltage."
+    ]
+  },
+  {
+    "id": "8-10A1",
+    "question": "In the circuit shown in Fig. 8A4, U5 pins 1 and 4 are high and both are in the reset state. Assume one clock cycle occurs of Clk A followed by one cycle of Clk B. What are the output states of the two D-type flip flops?",
+    "choices": [
+      "Pin 5 low, Pin 9 low.",
+      "Pin 5 high, Pin 9 low.",
+      "Pin 5 low, Pin 9 high.",
+      "Pin 5 high, Pin 9 high."
+    ],
+    "correct": 3,
+    "explanation": "Fig. 8A4: the first flip-flop's D is tied to its own Q̄, so it toggles. From reset (Q=0, Q̄=1), Clk A clocks in 1, so pin 5 goes high. That high is on the second flip-flop's D, so Clk B sets pin 9 high.",
+    "figure": "8a4.png"
+  },
+  {
+    "id": "8-10A2",
+    "question": "If more light strikes the photodiode in Fig. 8A5, there will be:",
+    "choices": [
+      "Less diode current.",
+      "No change in diode current.",
+      "More diode current.",
+      "There is wrong polarity on the diode."
+    ],
+    "correct": 2,
+    "explanation": "Fig. 8A5's photodiode is reverse-biased. More light generates more carriers, so more reverse (photo) current flows.",
+    "figure": "8a5.png",
+    "choice_notes": [
+      "More light gives MORE photocurrent.",
+      "The current changes with light.",
+      "",
+      "Reverse bias is correct for a photodiode."
+    ]
+  },
+  {
+    "id": "8-10A3",
+    "question": "In the circuit shown in Fig. 8A6, which of the following is true?",
+    "choices": [
+      "With A and B high, Q1 is saturated and Q2 is off.",
+      "With either A or B low, Q1 is saturated and Q2 is off.",
+      "With A and B low, Q2 is on and Q4 is off.",
+      "With either A or B low, Q1 is off and Q2 is on."
+    ],
+    "correct": 1,
+    "explanation": "Fig. 8A6 is a TTL NAND. If either input is low, Q1's base current flows out through that emitter and Q1 saturates. That starves Q2 of base current, so Q2 is off and the output goes high via Q3.",
+    "figure": "8a6.png",
+    "choice_notes": [
+      "With both inputs high, Q1 is reverse-active and Q2 turns ON.",
+      "",
+      "With inputs low, Q2 is OFF.",
+      "Reversed."
+    ]
+  },
+  {
+    "id": "8-10A4",
+    "question": "What is the correct value of RS in Fig. 8A7, if the voltage across the LED is 1.9 Volts with 5 Volts applied and If max equals 40 milliamps?",
+    "choices": [
+      "4,700 ohms.",
+      "155 ohms.",
+      "77 ohms.",
+      "10,000 ohms."
+    ],
+    "correct": 2,
+    "explanation": "RS = (Vsupply − VLED) / I = (5 − 1.9) V / 0.040 A = 77.5 Ω, so 77 Ω.",
+    "figure": "8a7.png"
+  },
+  {
+    "id": "8-10A5",
+    "question": "The block diagram of a typical RADAR system microprocessor is shown in Fig. 8A2. Choose the most correct statement regarding this system.",
+    "choices": [
+      "The ALU is used for address decoding.",
+      "General registers are used for arithmetic manipulations.",
+      "The control unit executes arithmetic manipulations.",
+      "Address pointers are contained in the general registers."
+    ],
+    "correct": 3,
+    "explanation": "In Fig. 8A2 the 17x13 general registers (D0–D7 data, A0–A7 address) hold the address pointers.",
+    "figure": "8a2.png",
+    "choice_notes": [
+      "Not the ALU's job.",
+      "The ALU does arithmetic.",
+      "The ALU does arithmetic.",
+      ""
+    ]
+  },
+  {
+    "id": "8-10A6",
+    "question": "You are troubleshooting a component on a printed circuit board in a RADAR system while referencing the Truth Table in Fig. 8A8. What kind of integrated circuit is the component?",
+    "choices": [
+      "D-type Flip-Flop, 3-State, Inverting.",
+      "Q-type Flip-Flop, Non-Inverting.",
+      "Q-type Directional Shift Register, Dual.",
+      "D to Q Convertor, 2-State."
+    ],
+    "correct": 0,
+    "explanation": "Fig. 8A8: on a rising clock edge (CP ↑) with OE low, the output takes the inverse of D (H → L, L → H). With OE high the output goes to Z (high impedance). That's an inverting, 3-state D-type flip-flop.",
+    "figure": "8a8.png",
+    "choice_notes": [
+      "",
+      "There's no 'Q-type' flip-flop.",
+      "Not a shift register.",
+      "Not a real device."
+    ]
+  },
+  {
+    "id": "8-11B1",
+    "question": "The magnetron is used to:",
+    "choices": [
+      "Generate the output signal at the proper operating frequency.",
+      "Determine the shape and width of the transmitted pulses.",
+      "Modulate the pulse signal.",
+      "Determine the pulse repetition rate."
+    ],
+    "correct": 0,
+    "explanation": "The magnetron is the microwave oscillator that generates the high-power RF pulse at the RADAR's operating frequency.",
+    "choice_notes": [
+      "",
+      "Pulse shape and width come from the PFN/modulator.",
+      "The modulator does that.",
+      "The synchronizer sets the PRR."
+    ]
+  },
+  {
+    "id": "8-11B2",
+    "question": "The purpose of the modulator is to:",
+    "choices": [
+      "Transmit the high voltage pulses to the antenna.",
+      "Provide high voltage pulses of the proper shape and width to the magnetron.",
+      "Adjust the pulse repetition rate.",
+      "Tune the Magnetron to the proper frequency."
+    ],
+    "correct": 1,
+    "explanation": "The modulator stores energy and delivers high-voltage pulses of the right shape and width to the magnetron, switching it on for each pulse.",
+    "choice_notes": [
+      "The magnetron and waveguide carry the RF to the antenna.",
+      "",
+      "The synchronizer sets the PRR.",
+      "Magnetrons are tuned mechanically, if at all."
+    ]
+  },
+  {
+    "id": "8-11B3",
+    "question": "Which of the following statements about most modern RADAR transmitter power supplies is false?",
+    "choices": [
+      "High voltage supplies may produce voltages in excess of 5,000 volts AC.",
+      "There are usually separate low voltage and high voltage supplies.",
+      "Low voltage supplies use switching circuits to deliver multiple voltages.",
+      "Low voltage supplies may supply both AC and DC voltages."
+    ],
+    "correct": 0,
+    "explanation": "This is the false statement: RADAR high-voltage supplies deliver DC (pulsed) to the magnetron, not 'more than 5,000 V AC'. The other statements about separate supplies and switching LV supplies are true."
+  },
+  {
+    "id": "8-11B4",
+    "question": "The purpose of the Pulse Forming Network is to:",
+    "choices": [
+      "Act as a low pass filter.",
+      "Act as a high pass filter.",
+      "Produce a pulse of the correct width.",
+      "Regulate the pulse repetition rate."
+    ],
+    "correct": 2,
+    "explanation": "The pulse forming network (an artificial transmission line of L and C) stores energy and discharges it as a rectangular pulse of the correct width.",
+    "choice_notes": [
+      "It's built like a low-pass ladder, but its job is pulse width.",
+      "Not a high-pass filter.",
+      "",
+      "The synchronizer sets the PRR."
+    ]
+  },
+  {
+    "id": "8-11B5",
+    "question": "The purpose of the Synchronizer is to:",
+    "choices": [
+      "Generate the modulating pulse to the magnetron.",
+      "Generate a timing signal that establishes the pulse repetition rate.",
+      "Insure that the TR tube conducts at the proper time.",
+      "Control the pulse width."
+    ],
+    "correct": 1,
+    "explanation": "The synchronizer generates the master trigger pulses that set the pulse repetition rate and keep the transmitter and display in step.",
+    "choice_notes": [
+      "The modulator makes the HV pulse.",
+      "",
+      "The TR fires by itself from the RF.",
+      "The PFN sets the width."
+    ]
+  },
+  {
+    "id": "8-11B6",
+    "question": "Which of the following is not part of the transmitting system?",
+    "choices": [
+      "Magnetron.",
+      "Modulator.",
+      "Pulse Forming Network.",
+      "Klystron."
+    ],
+    "correct": 3,
+    "explanation": "The transmitter chain is synchronizer → modulator (with PFN) → magnetron. A klystron (if any) serves as the receiver's local oscillator, not the transmitter.",
+    "choice_notes": [
+      "Magnetron: the transmitter oscillator.",
+      "Modulator: drives the magnetron.",
+      "PFN: shapes the pulse in the modulator.",
+      ""
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-12B1",
+    "question": "High voltage is applied to what element of the magnetron?",
+    "choices": [
+      "The waveguide.",
+      "The anode.",
+      "The plate cap.",
+      "The cathode."
+    ],
+    "correct": 3,
+    "explanation": "In marine RADAR magnetrons the large (negative) high-voltage pulse is applied to the cathode, while the anode block is grounded.",
+    "choice_notes": [
+      "The waveguide is grounded.",
+      "The anode is grounded for safety.",
+      "Magnetrons have no plate cap. That's an old tube term.",
+      ""
+    ]
+  },
+  {
+    "id": "8-12B2",
+    "question": "The characteristic of the magnetron output pulse that relates to accurate range measurement is its:",
+    "choices": [
+      "Amplitude.",
+      "Decay time.",
+      "Rise time.",
+      "Duration."
+    ],
+    "correct": 2,
+    "explanation": "Range is measured from the leading edge of the pulse, so a fast, steep rise time gives accurate range measurement.",
+    "choice_notes": [
+      "Amplitude affects detection range, not range accuracy.",
+      "Decay time affects minimum range a little, not accuracy.",
+      "",
+      "Duration (pulse width) affects resolution."
+    ]
+  },
+  {
+    "id": "8-12B3",
+    "question": "What device is used as a transmitter in a marine RADAR system?",
+    "choices": [
+      "Magnetron.",
+      "Klystron.",
+      "Beam-powered pentode.",
+      "Thyratron."
+    ],
+    "correct": 0,
+    "explanation": "Marine RADARs use a magnetron as the transmitter oscillator. Solid-state transmitters are a recent alternative.",
+    "choice_notes": [
+      "",
+      "Klystron: receiver LO (also used in some high-power transmitters elsewhere).",
+      "Beam-power pentode: HF/VHF transmitter tube.",
+      "Thyratron: the modulator SWITCH."
+    ]
+  },
+  {
+    "id": "8-12B4",
+    "question": "The magnetron is:",
+    "choices": [
+      "A type of diode that requires an internal magnetic field.",
+      "A triode that requires an external magnetic field.",
+      "Used as the local oscillator in the RADAR unit.",
+      "A type of diode that requires an external magnetic field."
+    ],
+    "correct": 3,
+    "explanation": "A magnetron is a diode (cathode and anode) whose electrons are made to circle by a strong external permanent magnet, exciting the anode's resonant cavities.",
+    "choice_notes": [
+      "The magnet is external.",
+      "Not a triode.",
+      "The LO is a klystron or Gunn.",
+      ""
+    ]
+  },
+  {
+    "id": "8-12B5",
+    "question": "A negative voltage is commonly applied to the magnetron cathode rather than a positive voltage to the magnetron anode because:",
+    "choices": [
+      "The cathode must be made neutral to force electrons into the drift area.",
+      "A positive voltage would tend to nullify or weaken the magnetic field.",
+      "The anode can be operated at ground potential for safety reasons.",
+      "The cavities might not be shock-excited into oscillation by a positive voltage."
+    ],
+    "correct": 2,
+    "explanation": "Applying the high voltage as negative to the cathode lets the large anode block, which is bolted to the waveguide and chassis, stay at ground potential. That's much safer.",
+    "choice_notes": [
+      "Not the reason.",
+      "Not the reason.",
+      "",
+      "Not the reason."
+    ]
+  },
+  {
+    "id": "8-12B6",
+    "question": "The anode of a magnetron is normally maintained at ground potential:",
+    "choices": [
+      "Because it operates more efficiently that way.",
+      "For safety purposes.",
+      "Never. It must be highly positive to attract the electrons.",
+      "Because greater peak-power ratings can be achieved."
+    ],
+    "correct": 1,
+    "explanation": "The anode is grounded for safety. The high voltage goes negative on the cathode, so the exposed anode block and waveguide carry no dangerous voltage.",
+    "choice_notes": [
+      "Efficiency is the same either way.",
+      "",
+      "The cathode is made highly NEGATIVE instead.",
+      "Not the reason."
+    ]
+  },
+  {
+    "id": "8-13B1",
+    "question": "In a solid-state RADAR modulator, the duration of the transmitted pulse is determined by:",
+    "choices": [
+      "The thyratron.",
+      "The magnetron voltage.",
+      "The pulse forming network.",
+      "The trigger pulse."
+    ],
+    "correct": 2,
+    "explanation": "The PFN's L-C values determine how long it takes to discharge, which is the transmitted pulse width.",
+    "choice_notes": [
+      "The thyratron only switches the PFN on.",
+      "Voltage affects power, not duration.",
+      "",
+      "The trigger starts the pulse but doesn't set its length."
+    ]
+  },
+  {
+    "id": "8-13B2",
+    "question": "The modulation frequency of most RADAR systems is between:",
+    "choices": [
+      "60 and 500 Hz.",
+      "3000 and 6000 Hz.",
+      "1500 and 7500 Hz.",
+      "1000 and 3000 Hz."
+    ],
+    "correct": 0,
+    "explanation": "The pool's answer: the modulation (pulse repetition) frequency is between 60 and 500 Hz."
+  },
+  {
+    "id": "8-13B3",
+    "question": "A shipboard RADAR uses a PFN driving a magnetron cathode through a step-up transformer. This results in which type of modulation?",
+    "choices": [
+      "Frequency modulation.",
+      "Amplitude modulation.",
+      "Continuous Wave (CW) modulation.",
+      "Pulse modulation."
+    ],
+    "correct": 3,
+    "explanation": "The PFN and transformer turn the magnetron on in short, high-power bursts and off in between. That is pulse modulation.",
+    "choice_notes": [
+      "Not FM.",
+      "AM is continuous amplitude variation, not on/off pulses.",
+      "CW = continuous, unmodulated.",
+      ""
+    ]
+  },
+  {
+    "id": "8-13B4",
+    "question": "In a pulse modulated magnetron what device determines the shape and width of the pulse?",
+    "choices": [
+      "Pulse Forming Network.",
+      "Thyratron.",
+      "LC parallel circuit.",
+      "Dimensions of the magnetron cavity."
+    ],
+    "correct": 0,
+    "explanation": "The pulse forming network sets the shape and width of the modulator pulse, and so of the magnetron's RF pulse.",
+    "choice_notes": [
+      "",
+      "The thyratron is just the switch.",
+      "Not a pulse former.",
+      "The cavity sets the RF frequency."
+    ]
+  },
+  {
+    "id": "8-13B5",
+    "question": "What device(s) may act as the modulator of a RADAR system?",
+    "choices": [
+      "Magnetron.",
+      "Klystron.",
+      "Video amplifier.",
+      "Thyratron or a silicon-controlled rectifier (SCR)."
+    ],
+    "correct": 3,
+    "explanation": "The modulator's switch is a thyratron (gas tube) or an SCR/solid-state switch that discharges the PFN into the magnetron.",
+    "choice_notes": [
+      "The magnetron is the oscillator being modulated.",
+      "The klystron is the LO.",
+      "The video amp is in the receiver.",
+      ""
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-13B6",
+    "question": "The purpose of a modulator in the transmitter section of a RADAR is to:",
+    "choices": [
+      "Improve bearing resolution.",
+      "Provide the correct waveform to the transmitter.",
+      "Prevent sea return.",
+      "Control magnetron power output."
+    ],
+    "correct": 1,
+    "explanation": "The modulator supplies the correct high-voltage pulse waveform to the transmitter (the magnetron).",
+    "choice_notes": [
+      "Bearing resolution comes from beamwidth.",
+      "",
+      "Sea return is suppressed by STC.",
+      "Not its purpose."
+    ]
+  },
+  {
+    "id": "8-14B1",
+    "question": "The pulse developed by the modulator may have an amplitude greater than the supply voltage. This is possible by:",
+    "choices": [
+      "Using a voltage multiplier circuit.",
+      "Employing a resonant charging choke.",
+      "Discharging a capacitor through an inductor.",
+      "Discharging two capacitors in series and combining their charges."
+    ],
+    "correct": 1,
+    "explanation": "With a resonant charging choke, the LC circuit formed by the choke and the PFN capacitance overshoots: the PFN charges to nearly twice the supply voltage (a diode holds it there until firing).",
+    "choice_notes": [
+      "Multipliers aren't used in PFN modulators.",
+      "",
+      "Not the mechanism.",
+      "Not the mechanism."
+    ]
+  },
+  {
+    "id": "8-14B2",
+    "question": "Pulse transformers and pulse-forming networks are commonly used to shape the microwave energy burst RADAR transmitter. The switching devices most often used in such pulse-forming circuits are:",
+    "choices": [
+      "Power MOSFETS and Triacs.",
+      "Switching transistors.",
+      "Thyratrons and BJT’s.",
+      "SCR’s and Thyratrons."
+    ],
+    "correct": 3,
+    "explanation": "The switch that discharges the PFN into the pulse transformer must handle high voltage and current very fast. Thyratrons (gas tubes) and SCRs are the usual choice.",
+    "choice_notes": [
+      "Not typical in classic modulators.",
+      "Not the classic choice.",
+      "BJTs aren't typical.",
+      ""
+    ]
+  },
+  {
+    "id": "8-14B3",
+    "question": "The purpose of the pulse-forming network is to:",
+    "choices": [
+      "Determine the width of the modulating pulses.",
+      "Determine the pulse repetition rate.",
+      "Act as a high pass filter.",
+      "Act as a log pass filter."
+    ],
+    "correct": 0,
+    "explanation": "The PFN, an artificial transmission line, discharges in a fixed time set by its L and C values, determining the modulating pulse width.",
+    "choice_notes": [
+      "",
+      "The synchronizer sets the PRR.",
+      "Not a filter function.",
+      "Not its purpose."
+    ]
+  },
+  {
+    "id": "8-14B4",
+    "question": "The shape and duration of the high-voltage pulse delivered to the magnetron is established by:",
+    "choices": [
+      "An RC network in the keyer stage.",
+      "The duration of the modulator input trigger.",
+      "An artificial delay line.",
+      "The time required to saturate the pulse transformer."
+    ],
+    "correct": 2,
+    "explanation": "The PFN is an artificial delay line: a pulse takes a fixed time to travel it and back, which sets the duration and flat-topped shape of the magnetron pulse.",
+    "choice_notes": [
+      "Not used.",
+      "The trigger starts the pulse.",
+      "",
+      "Saturation would distort the pulse."
+    ]
+  },
+  {
+    "id": "8-14B5",
+    "question": "Pulse-forming networks are usually composed of the following:",
+    "choices": [
+      "Series capacitors and shunt inductors.",
+      "Series inductors and shunt capacitors.",
+      "Resonant circuit with an inductor and capacitor.",
+      "None of the above."
+    ],
+    "correct": 1,
+    "explanation": "A PFN imitates a transmission line using lumped series inductors and shunt capacitors, a low-pass ladder.",
+    "choice_notes": [
+      "That would be a high-pass ladder.",
+      "",
+      "A single resonant circuit gives a sine, not a flat-topped pulse.",
+      ""
+    ]
+  },
+  {
+    "id": "8-14B6",
+    "question": "An artificial transmission line is used for:",
+    "choices": [
+      "The transmission of RADAR pulses.",
+      "Testing the RADAR unit, when actual targets are not available.",
+      "Determining the shape and duration of pulses.",
+      "Testing the delay time for artificial targets."
+    ],
+    "correct": 2,
+    "explanation": "An artificial transmission line (the PFN) shapes the modulator pulse and sets its duration.",
+    "choice_notes": [
+      "RADAR pulses go via waveguide.",
+      "That's an echo box.",
+      "",
+      "Not its purpose."
+    ]
+  },
+  {
+    "id": "8-15B1",
+    "question": "The ferrite material in a circulator is used as a(an):",
+    "choices": [
+      "Electric switch.",
+      "Saturated reactor.",
+      "Loading element.",
+      "Phase shifter."
+    ],
+    "correct": 3,
+    "explanation": "In a circulator, magnetized ferrite gives a non-reciprocal phase shift, so waves entering each port are steered to the next port in one rotational direction only.",
+    "choice_notes": [
+      "Not a switch.",
+      "Not a saturable reactor.",
+      "Not a load.",
+      ""
+    ]
+  },
+  {
+    "id": "8-15B2",
+    "question": "In a circular resonant cavity with flat ends, the E-field and the H-field form with specific relationships. The:",
+    "choices": [
+      "E-lines are parallel to the top and bottom walls.",
+      "E-lines are perpendicular to the end walls.",
+      "H-lines are perpendicular to the side walls.",
+      "H-lines are circular to the end walls."
+    ],
+    "correct": 1,
+    "explanation": "In the basic mode of a circular cavity with flat ends, the electric field lines run straight across between the end walls, perpendicular to them, while the magnetic field forms circles around the axis."
+  },
+  {
+    "id": "8-15B3",
+    "question": "A ferrite circulator is most commonly used in what portion of a RADAR system?",
+    "choices": [
+      "The antenna.",
+      "The modulator.",
+      "The duplexer.",
+      "The receiver."
+    ],
+    "correct": 2,
+    "explanation": "The ferrite circulator acts as the duplexer: transmitter to antenna, antenna to receiver.",
+    "choice_notes": [
+      "Not in the antenna.",
+      "Not in the modulator.",
+      "",
+      "Not in the receiver itself."
+    ]
+  },
+  {
+    "id": "8-15B4",
+    "question": "A circulator provides what function in the RF section of a RADAR system?",
+    "choices": [
+      "It replaces the TR cell and functions as a duplexer.",
+      "It cools the magnetron by forcing a flow of circulating air.",
+      "It permits tests to be made to the thyristors while in use.",
+      "It transmits antenna position to the indicator during operation."
+    ],
+    "correct": 0,
+    "explanation": "A circulator does the duplexer's job, steering power transmitter → antenna and antenna → receiver, so it can replace the TR/ATR cells.",
+    "choice_notes": [
+      "",
+      "Nonsense.",
+      "Nonsense.",
+      "That's the synchro/resolver."
+    ]
+  },
+  {
+    "id": "8-15B5",
+    "question": "A directional coupler has an attenuation of -30 db. A measurement of 100 milliwatts at the coupler indicates the power of the line is:",
+    "choices": [
+      "10 watts.",
+      "100 watts.",
+      "1,000 watts.",
+      "10,000 watts."
+    ],
+    "correct": 1,
+    "explanation": "−30 dB is a factor of 1000. The coupler samples 1/1000 of the line power, so 100 mW x 1000 = 100 W."
+  },
+  {
+    "id": "8-15B6",
+    "question": "What is the purpose or function of the RADAR duplexer/circulator?",
+    "choices": [
+      "An electronic switch that allows the use of one antenna for both transmission and reception.",
+      "A coupling device that is used in the transition from a rectangular waveguide to a circular waveguide.",
+      "A modified length of waveguide used to sample a portion of the transmitted energy for testing purposes.",
+      "A dual section coupling device that allows the use of a magnetron as a transmitter."
+    ],
+    "correct": 0,
+    "explanation": "The duplexer or circulator lets one antenna transmit and receive: it routes the pulse to the antenna and the echoes to the receiver.",
+    "choice_notes": [
+      "",
+      "That's a waveguide transition.",
+      "That's a directional coupler.",
+      "Not the definition."
+    ]
+  },
+  {
+    "id": "8-16B1",
+    "question": "The ATR box:",
+    "choices": [
+      "Protects the receiver from strong RADAR signals.",
+      "Prevents the received signal from entering the transmitter.",
+      "Turns off the receiver when the transmitter is on.",
+      "All of the above."
+    ],
+    "correct": 1,
+    "explanation": "The ATR (anti-TR) tube keeps received echoes from wandering into the transmitter (magnetron) branch, so they all go to the receiver.",
+    "choice_notes": [
+      "Protecting the receiver is the TR's job.",
+      "",
+      "Muting the receiver is the TR's job.",
+      ""
+    ]
+  },
+  {
+    "id": "8-16B2",
+    "question": "When a pulse RADAR is radiating, which elements in the TR box are energized?",
+    "choices": [
+      "The TR tube only.",
+      "The ATR tube only.",
+      "Both the TR and ATR tubes.",
+      "Neither the TR nor ATR tubes."
+    ],
+    "correct": 2,
+    "explanation": "During the transmitted pulse both gas tubes fire (ionize): the TR shorts and protects the receiver input, and the ATR lets the pulse pass to the antenna. Between pulses both are de-ionized.",
+    "choice_notes": [
+      "Both fire.",
+      "Both fire.",
+      "",
+      "Both fire during transmit."
+    ]
+  },
+  {
+    "id": "8-16B3",
+    "question": "The TR box:",
+    "choices": [
+      "Prevents the received signal from entering the transmitter.",
+      "Protects the receiver from the strong RADAR pulses.",
+      "Turns off the receiver when the transmitter is on.",
+      "Protects the receiver from the strong RADAR pulses and mutes the receiver when the transmitter is on."
+    ],
+    "correct": 3,
+    "explanation": "The TR tube fires during each transmit pulse, shorting the receiver input. It protects the sensitive mixer crystal and mutes the receiver while transmitting.",
+    "choice_notes": [
+      "That's the ATR.",
+      "Incomplete.",
+      "Incomplete.",
+      ""
+    ]
+  },
+  {
+    "id": "8-16B4",
+    "question": "What device is located between the magnetron and the mixer and prevents received signals from entering the magnetron?",
+    "choices": [
+      "The ATR tube.",
+      "The TR tube.",
+      "The RF Attenuator.",
+      "A resonant cavity."
+    ],
+    "correct": 0,
+    "explanation": "The ATR tube, between the magnetron and the junction to the mixer, blocks received signals from entering the magnetron.",
+    "choice_notes": [
+      "",
+      "The TR protects the receiver.",
+      "The attenuator is in the AFC sample line.",
+      "Not the device."
+    ]
+  },
+  {
+    "id": "8-16B5",
+    "question": "A keep-alive voltage is applied to:",
+    "choices": [
+      "The crystal detector.",
+      "The ATR tube.",
+      "The TR tube.",
+      "The magnetron."
+    ],
+    "correct": 2,
+    "explanation": "A keep-alive voltage keeps a small discharge going in the TR tube, so it fires almost instantly when the transmitter pulse arrives.",
+    "choice_notes": [
+      "Not to the crystal.",
+      "Not to the ATR.",
+      "",
+      "Not to the magnetron."
+    ]
+  },
+  {
+    "id": "8-16B6",
+    "question": "A DC keep-alive potential:",
+    "choices": [
+      "Is applied to a TR tube to make it more sensitive.",
+      "Partially ionizes the gas in a TR tube, making it very sensitive to transmitter pulses.",
+      "Fully ionizes the gas in a TR tube.",
+      "Is applied to a TR tube to make it more sensitive and partially ionizes the gas in a TR tube."
+    ],
+    "correct": 3,
+    "explanation": "The DC keep-alive partially ionizes the TR tube's gas, so it fires very quickly and protects the receiver even at the leading edge of the pulse.",
+    "choice_notes": [
+      "Incomplete.",
+      "Incomplete.",
+      "Fully ionized would short the receiver all the time.",
+      ""
+    ]
+  },
+  {
+    "id": "8-17B1",
+    "question": "What RADAR circuit determines the pulse repetition rate (PRR)?",
+    "choices": [
+      "Discriminator.",
+      "Timer (synchronizer circuit).",
+      "Artificial transmission line.",
+      "Pulse-rate-indicator circuit."
+    ],
+    "correct": 1,
+    "explanation": "The timer (synchronizer) generates the trigger pulses that set the PRR and time the rest of the system.",
+    "choice_notes": [
+      "The discriminator is in the AFC.",
+      "",
+      "The PFN sets pulse WIDTH.",
+      "Not a real circuit."
+    ]
+  },
+  {
+    "id": "8-17B2",
+    "question": "The triggering section is also known as the:",
+    "choices": [
+      "PFN.",
+      "Timer circuit.",
+      "Blocking oscillator.",
+      "Synchronizer."
+    ],
+    "correct": 3,
+    "explanation": "The triggering section is the synchronizer: it 'triggers' the modulator and display at the right instants.",
+    "choice_notes": [
+      "The PFN shapes the pulse.",
+      "Also used loosely, but 'synchronizer' is the term.",
+      "One possible timing circuit, not the section name.",
+      ""
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-17B3",
+    "question": "Operation of any RADAR system begins in the:",
+    "choices": [
+      "Triggering section.",
+      "Magnetron.",
+      "AFC.",
+      "PFN."
+    ],
+    "correct": 0,
+    "explanation": "Every RADAR cycle starts with a trigger from the timing (triggering) section, which fires the modulator and starts the display sweep.",
+    "choice_notes": [
+      "",
+      "The magnetron fires only when triggered.",
+      "The AFC tunes the LO.",
+      "The PFN discharges when triggered."
+    ]
+  },
+  {
+    "id": "8-17B4",
+    "question": "The timer circuit:",
+    "choices": [
+      "Determines the pulse repetition rate (PRR).",
+      "Determines range markers.",
+      "Provides blanking and unblanking signals for the CRT.",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "The timer sets the PRR, generates range markers, and provides the blanking/unblanking signals for the display. All of the above."
+  },
+  {
+    "id": "8-17B5",
+    "question": "Pulse RADARs require precise timing for their operation. Which type circuit below might best be used to provide these accurate timing pulses?",
+    "choices": [
+      "Single-swing blocking oscillator.",
+      "AFC controlled sinewave oscillator.",
+      "Non-symmetrical astable multivibrator.",
+      "Triggered flip-flop type multivibrator."
+    ],
+    "correct": 0,
+    "explanation": "A single-swing blocking oscillator gives sharp, precisely timed trigger pulses, which suits the RADAR timing chain.",
+    "choice_notes": [
+      "",
+      "Sine waves don't make sharp timing pulses.",
+      "Less precise.",
+      "Less suitable."
+    ]
+  },
+  {
+    "id": "8-17B6",
+    "question": "Unblanking pulses are produced by the timer circuit. Where are they sent?",
+    "choices": [
+      "IF amplifiers.",
+      "Mixer.",
+      "CRT.",
+      "Discriminator."
+    ],
+    "correct": 2,
+    "explanation": "Unblanking pulses turn the CRT beam on during the sweep (and off during retrace), so they go to the CRT.",
+    "choice_notes": [
+      "IF amplifiers get gain control, not unblanking.",
+      "The mixer gets the LO.",
+      "",
+      "The discriminator is in the AFC."
+    ]
+  },
+  {
+    "id": "8-18B1",
+    "question": "An advantage of resonant charging is that it:",
+    "choices": [
+      "Eliminates the need for a reverse current diode.",
+      "Guarantees perfectly square output pulses.",
+      "Reduces the high-voltage power supply requirements.",
+      "Maintains a constant magnetron output frequency."
+    ],
+    "correct": 2,
+    "explanation": "Resonant charging charges the PFN to about twice the supply voltage, so the high-voltage supply needs to deliver only half the pulse voltage.",
+    "choice_notes": [
+      "A charging diode is still used.",
+      "Pulse shape comes from the PFN.",
+      "",
+      "Frequency isn't affected."
+    ]
+  },
+  {
+    "id": "8-18B2",
+    "question": "The characteristics of a field-effect transistor (FET) used in a modern RADAR switching power supply can be compared as follows:",
+    "choices": [
+      "“On” state compares to a bipolar transistor. “Off” state compares to a 1-Megohm resistor.",
+      "“On” state compares to a pure resistor. “Off” state compares to a mechanical relay.",
+      "“On” state compares to an low resistance inductor. “Off” state compares to a 10-Megohm resistor.",
+      "“On” state compares to a resistor. “Off” state compares to a capacitor."
+    ],
+    "correct": 1,
+    "explanation": "Switched on, a power FET's channel behaves like a small pure resistance (RDS(on)). Switched off it is practically an open circuit, like opened relay contacts.",
+    "choice_notes": [
+      "Not accurate.",
+      "",
+      "Not accurate.",
+      "Not accurate."
+    ]
+  },
+  {
+    "id": "8-18B3",
+    "question": "A pulse-width modulator in a switching power supply is used to:",
+    "choices": [
+      "Provide the reference voltage for the regulator.",
+      "Vary the frequency of the switching regulator to control the output voltage.",
+      "Vary the duty cycle of the regulator switch to control the output voltage.",
+      "Compare the reference voltage with the output voltage sample and produce an error voltage."
+    ],
+    "correct": 2,
+    "explanation": "A PWM controller varies the on/off ratio (duty cycle) of the switching transistor. More on-time means more output voltage, which is how it regulates.",
+    "choice_notes": [
+      "The reference is a Zener or bandgap.",
+      "PWM keeps the frequency FIXED and varies the width.",
+      "",
+      "That's the error amplifier."
+    ]
+  },
+  {
+    "id": "8-18B4",
+    "question": "In a fixed-frequency switching power supply, the pulse width of the switching circuit will increase when:",
+    "choices": [
+      "The load impedance decreases.",
+      "The load current decreases.",
+      "The output voltage increases.",
+      "The input voltage increases."
+    ],
+    "correct": 0,
+    "explanation": "Lower load impedance draws more current. To hold the output voltage, the controller widens the pulses, giving more on-time.",
+    "choice_notes": [
+      "",
+      "Less load current needs NARROWER pulses.",
+      "Higher output gives narrower pulses.",
+      "Higher input gives narrower pulses."
+    ]
+  },
+  {
+    "id": "8-18B5",
+    "question": "A major consideration for the use of a switching regulator power supply over a linear regulator is:",
+    "choices": [
+      "The switching regulator has better regulation.",
+      "The linear regulator does not require a transformer to step down AC line voltages to a usable level.",
+      "The switching regulator can be used in nearly all applications requiring regulated voltage.",
+      "The overall efficiency of a switching regulator is much higher than a linear power supply."
+    ],
+    "correct": 3,
+    "explanation": "A switching regulator's transistor is either fully on or fully off, wasting little power: typically 80 to 90 % efficient versus about 50 % for linear regulators.",
+    "choice_notes": [
+      "Linear regulators usually regulate better (less ripple).",
+      "Not the main consideration.",
+      "Noise limits where switchers can be used.",
+      ""
+    ]
+  },
+  {
+    "id": "8-18B6",
+    "question": "Which of the following characteristics are true of a power MOSFET used in a RADAR switching supply?",
+    "choices": [
+      "Low input impedance; failure mode can be gate punch-through.",
+      "High input impedance; failure mode can be gate punch-through.",
+      "High input impedance; failure mode can be thermal runaway.",
+      "Low input impedance; failure mode can be gate breakdown."
+    ],
+    "correct": 1,
+    "explanation": "A power MOSFET's insulated gate gives very high input impedance, but excess gate voltage or static can puncture the thin gate oxide.",
+    "choice_notes": [
+      "MOSFETs have HIGH input impedance.",
+      "",
+      "Thermal runaway is a bipolar failure mode.",
+      "Wrong impedance."
+    ]
+  },
+  {
+    "id": "8-19C1",
+    "question": "Which of the following statements is true?",
+    "choices": [
+      "The front end of the receiver does not provide any amplification to the RADAR signal.",
+      "The mixer provides a gain of at least 6 db.",
+      "The I.F. amplifier is always a high gain, narrow bandwidth amplifier.",
+      "None of the above."
+    ],
+    "correct": 0,
+    "explanation": "A RADAR receiver usually has no RF amplifier: the signal goes straight from the duplexer into the crystal mixer, which loses a few dB. Gain is added in the IF stages.",
+    "choice_notes": [
+      "",
+      "A crystal mixer has a conversion LOSS of a few dB, not gain.",
+      "The IF bandwidth is switched WIDE for short pulses and narrow for long pulses.",
+      ""
+    ]
+  },
+  {
+    "id": "8-19C2",
+    "question": "Logarithmic receivers:",
+    "choices": [
+      "Can’t be damaged.",
+      "Can’t be saturated.",
+      "Should not be used in RADAR systems.",
+      "Have low sensitivity."
+    ],
+    "correct": 1,
+    "explanation": "A logarithmic receiver's output grows with the log of input level. Very strong echoes are compressed instead of driving it into saturation, giving a huge dynamic range.",
+    "choice_notes": [
+      "Any receiver can be damaged by transmitter leakage, e.g. a failed TR cell.",
+      "",
+      "Log amps are standard in RADAR.",
+      "Their sensitivity is normal. Their advantage is dynamic range."
+    ]
+  },
+  {
+    "id": "8-19C3",
+    "question": "RADAR receivers are similar to:",
+    "choices": [
+      "FM receivers.",
+      "HF receivers.",
+      "T.V. receivers.",
+      "Microwave receivers."
+    ],
+    "correct": 3,
+    "explanation": "RADAR receivers are superheterodyne microwave receivers (waveguide input, crystal mixer, klystron or Gunn LO, IF strip).",
+    "choice_notes": [
+      "FM receivers have a limiter and discriminator. RADAR detects pulses with an AM diode detector.",
+      "HF receivers work at 3-30 MHz with an RF amplifier front end.",
+      "TV receivers are close (wide video bandwidth) but have no crystal-mixer microwave front end.",
+      ""
+    ]
+  },
+  {
+    "id": "8-19C4",
+    "question": "What section of the receiving system sends signals to the display system?",
+    "choices": [
+      "Video amplifier.",
+      "Audio amplifier.",
+      "I.F. Amplifier.",
+      "Resolver."
+    ],
+    "correct": 0,
+    "explanation": "The video amplifier boosts the detected pulses and sends them to the display.",
+    "choice_notes": [
+      "",
+      "RADAR has no audio.",
+      "The IF amp feeds the detector, not the display.",
+      "The resolver sends antenna ANGLE to the sweep, not signals from the receiver."
+    ]
+  },
+  {
+    "id": "8-19C5",
+    "question": "What is the main difference between an analog and a digital receiver?",
+    "choices": [
+      "Special amplification circuitry.",
+      "The presence of decision circuitry to distinguish between “on” and “off” signal levels.",
+      "An AGC stage is not required in a digital receiver.",
+      "Digital receivers produce no distortion."
+    ],
+    "correct": 1,
+    "explanation": "A digital receiver decides, by threshold or comparator circuitry, whether a signal is present ('on') or not ('off'), rather than passing a continuously varying signal.",
+    "choice_notes": [
+      "Both use amplifiers.",
+      "",
+      "Digital receivers still need gain control.",
+      "No receiver is distortion-free."
+    ]
+  },
+  {
+    "id": "8-19C6",
+    "question": "In a RADAR receiver, the RF power amplifier:",
+    "choices": [
+      "Is high gain.",
+      "Is low gain.",
+      "Does not exist.",
+      "Requires wide bandwidth."
+    ],
+    "correct": 2,
+    "explanation": "Marine RADAR receivers normally have no RF amplifier stage. The echo goes directly into the mixer.",
+    "choice_notes": [
+      "There is no RF amplifier. The echo goes straight from the TR cell to the crystal mixer.",
+      "There is no RF amplifier at all.",
+      "",
+      "There is no RF amplifier at all."
+    ]
+  },
+  {
+    "id": "8-20C1",
+    "question": "The diagram in Fig. 8C9 shows a simplified RADAR mixer circuit using a crystal diode as the first detector. What is the output of the circuit when no echoes are being received?",
+    "choices": [
+      "60 MHz CW.",
+      "4095 MHz CW.",
+      "4155 MHz CW.",
+      "No output is developed."
+    ],
+    "correct": 3,
+    "explanation": "Fig. 8C9: the 60 MHz output is the difference between echo (4095 MHz) and LO (4155 MHz). With no echoes there's only the LO, and the tuned 60 MHz output circuit develops nothing.",
+    "figure": "8c9.png"
+  },
+  {
+    "id": "8-20C2",
+    "question": "In the receive mode, frequency conversion is generally accomplished by a:",
+    "choices": [
+      "Tunable wave-guide section.",
+      "Pentagrid converter.",
+      "Crystal diode.",
+      "Ferrite device."
+    ],
+    "correct": 2,
+    "explanation": "In the receiver, frequency conversion is done by a crystal diode mixer that combines the echo with the local oscillator.",
+    "choice_notes": [
+      "Waveguide sections carry the signal. They don't convert it.",
+      "Pentagrid converter: a tube mixer for broadcast receivers, useless at GHz.",
+      "",
+      "Ferrite devices are circulators and isolators (duplexers)."
+    ]
+  },
+  {
+    "id": "8-20C3",
+    "question": "An RF mixer has what purpose in a RADAR system?",
+    "choices": [
+      "Mixes the CW transmitter output to form pulsed waves.",
+      "Converts a low-level signal to a different frequency.",
+      "Prevents microwave oscillations from reaching the antenna.",
+      "Combines audio tones with RF to produce the RADAR signal."
+    ],
+    "correct": 1,
+    "explanation": "The mixer converts the weak microwave echo down to the IF (e.g. 60 MHz), where it can be amplified and filtered easily.",
+    "choice_notes": [
+      "The magnetron itself produces pulsed RF.",
+      "",
+      "That's the TR/ATR or an isolator.",
+      "RADAR has no audio."
+    ]
+  },
+  {
+    "id": "8-20C4",
+    "question": "In a RADAR unit, the mixer uses a:",
+    "choices": [
+      "Pentagrid converter tube.",
+      "Field-effect transistor.",
+      "Silicon crystal or PIN diode.",
+      "Microwave transistor."
+    ],
+    "correct": 2,
+    "explanation": "RADAR mixers use silicon point-contact crystals or, in newer sets, PIN or Schottky diodes.",
+    "choice_notes": [
+      "Tube mixer for low frequencies.",
+      "Not used as the first mixer in classic marine RADAR.",
+      "",
+      "Not used here: the mixer is passive."
+    ]
+  },
+  {
+    "id": "8-20C5",
+    "question": "What component of a RADAR receiver is represented by block 49 in Fig. 8A1?",
+    "choices": [
+      "Discriminator.",
+      "IF amplifier.",
+      "Klystron.",
+      "Crystal detector (the mixer)."
+    ],
+    "correct": 3,
+    "explanation": "In Fig. 8A1, block 49 combines the magnetron sample (via attenuator 47) with the local oscillator (48) in the AFC channel. It is a crystal detector acting as a mixer.",
+    "figure": "8a1.png",
+    "choice_notes": [
+      "Discriminator: block 50 (AFC).",
+      "IF amplifier: follows the mixer.",
+      "Klystron: block 48 (LO).",
+      ""
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-20C6",
+    "question": "In a RADAR unit, the mixer uses:",
+    "choices": [
+      "PIN diodes and silicon crystals.",
+      "PIN diodes.",
+      "Boettcher crystals.",
+      "Silicon crystals."
+    ],
+    "correct": 0,
+    "explanation": "RADAR mixers use silicon crystals and PIN diodes."
+  },
+  {
+    "id": "8-21C1",
+    "question": "The error voltage from the discriminator is applied to the:",
+    "choices": [
+      "Repeller (reflector) of the klystron.",
+      "Grids of the IF amplifier.",
+      "Grids of the RF amplifiers.",
+      "Magnetron."
+    ],
+    "correct": 0,
+    "explanation": "The AFC discriminator's error voltage is applied to the klystron's repeller (reflector), which fine-tunes the local oscillator.",
+    "choice_notes": [
+      "",
+      "IF grids get the gain control (AGC/STC).",
+      "There is no RF amplifier.",
+      "The magnetron isn't tuned electrically. The AFC follows it by retuning the LO."
+    ]
+  },
+  {
+    "id": "8-21C2",
+    "question": "In a RADAR unit, the local oscillator is a:",
+    "choices": [
+      "Hydrogen Thyratron.",
+      "Klystron.",
+      "Pentagrid converter tube.",
+      "Reactance tube modulator."
+    ],
+    "correct": 1,
+    "explanation": "Classic RADAR receivers use a reflex klystron as the local oscillator (newer ones use a Gunn diode).",
+    "choice_notes": [
+      "Hydrogen thyratron: the modulator switch.",
+      "",
+      "Pentagrid: a low-frequency mixer tube.",
+      "Reactance tube: an old FM modulator/AFC element in VHF sets."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-21C3",
+    "question": "What component of a RADAR receiver is represented by block 48 in Fig. 8A1?",
+    "choices": [
+      "Klystron (local oscillator).",
+      "Discriminator.",
+      "IF amplifier.",
+      "Crystal detector."
+    ],
+    "correct": 0,
+    "explanation": "Block 48 in Fig. 8A1 feeds both the receiver mixer (crystal detector) and the AFC mixer (49), and is controlled by the AFC output. It's the klystron local oscillator.",
+    "figure": "8a1.png",
+    "choice_notes": [
+      "",
+      "Discriminator: block 50.",
+      "IF amplifier: after the mixer.",
+      "Crystal detector: block 49."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-21C4",
+    "question": "What device(s) could be used as the local oscillator in a RADAR receiver?",
+    "choices": [
+      "Thyratron",
+      "Klystron",
+      "Klystron and a Gunn Diode",
+      "Gunn diode"
+    ],
+    "correct": 2,
+    "explanation": "Both a reflex klystron and a Gunn diode oscillator can serve as the microwave local oscillator.",
+    "choice_notes": [
+      "Thyratron: the modulator switch, not an oscillator.",
+      "Correct but incomplete. A Gunn diode works too.",
+      "",
+      "Correct but incomplete. A klystron works too."
+    ]
+  },
+  {
+    "id": "8-21C5",
+    "question": "The klystron local oscillator is constantly kept on frequency by:",
+    "choices": [
+      "Constant manual adjustments.",
+      "The Automatic Frequency Control circuit.",
+      "A feedback loop from the crystal detector.",
+      "A feedback loop from the TR box."
+    ],
+    "correct": 1,
+    "explanation": "The AFC circuit continuously compares magnetron and LO frequency and retunes the klystron to keep the IF on frequency.",
+    "choice_notes": [
+      "Manual tuning is only the backup.",
+      "",
+      "The crystal mixer has no feedback role.",
+      "The TR box is just a switch."
+    ]
+  },
+  {
+    "id": "8-21C6",
+    "question": "How may the frequency of the klystron be varied?",
+    "choices": [
+      "Small changes can be made by adjusting the anode voltage.",
+      "Large changes can be made by adjusting the frequency.",
+      "By changing the phasing of the buncher grids",
+      "Small changes can be made by adjusting the repeller voltage and large changes can be made by adjusting the size of the resonant cavity."
+    ],
+    "correct": 3,
+    "explanation": "Repeller voltage gives small electronic tuning. Changing the cavity size (a mechanical tuner) gives large frequency changes.",
+    "choice_notes": [
+      "A reflex klystron has no anode tuning.",
+      "Circular nonsense.",
+      "A reflex klystron has one cavity, not separate buncher grids.",
+      ""
+    ]
+  },
+  {
+    "id": "8-22C1",
+    "question": "Overcoupling in a RADAR receiver will cause?",
+    "choices": [
+      "Improved target returns.",
+      "Increase the range of the IAGC.",
+      "Decrease noise.",
+      "Oscillations."
+    ],
+    "correct": 3,
+    "explanation": "Too much coupling between IF stages produces regenerative feedback paths, so the amplifier can oscillate.",
+    "choice_notes": [
+      "Overcoupled stages ring and oscillate. They don't improve returns.",
+      "Not related.",
+      "Oscillation ADDS noise and false video.",
+      ""
+    ]
+  },
+  {
+    "id": "8-22C2",
+    "question": "The usual intermediate frequency of a shipboard RADAR unit is:",
+    "choices": [
+      "455 kHz.",
+      "10.7 MHz.",
+      "30 or 60 MHz.",
+      "120 MHz."
+    ],
+    "correct": 2,
+    "explanation": "Marine RADARs commonly use an IF of 30 or 60 MHz, high enough for the wide bandwidth that short pulses need.",
+    "choice_notes": [
+      "455 kHz: AM broadcast receiver IF.",
+      "10.7 MHz: FM broadcast receiver IF.",
+      "",
+      "Not standard for marine RADAR."
+    ]
+  },
+  {
+    "id": "8-22C3",
+    "question": "The I.F. Amplifier bandwidth is:",
+    "choices": [
+      "Wide for short ranges and narrow for long ranges.",
+      "Wide for long ranges and narrow for short ranges.",
+      "Constant for all ranges.",
+      "Adjustable from the control panel."
+    ],
+    "correct": 0,
+    "explanation": "Short-range modes use very short pulses, which need wide IF bandwidth. Long-range modes use long pulses, so a narrower bandwidth suffices and lets in less noise.",
+    "choice_notes": [
+      "",
+      "Reversed. Long range = wide pulse = narrow bandwidth.",
+      "It's switched with the pulse width.",
+      "It's switched automatically with the range scale."
+    ]
+  },
+  {
+    "id": "8-22C4",
+    "question": "A logarithmic IF amplifier is preferable to a linear IF amplifier in a RADAR receiver because it:",
+    "choices": [
+      "Has higher gain.",
+      "Is more easily aligned.",
+      "Has a lower noise figure.",
+      "Has a greater dynamic range."
+    ],
+    "correct": 3,
+    "explanation": "A log IF amplifier compresses strong signals and keeps amplifying weak ones, giving a much larger dynamic range without saturating.",
+    "choice_notes": [
+      "Gain isn't the reason.",
+      "Not easier to align.",
+      "The noise figure is set by the mixer.",
+      ""
+    ]
+  },
+  {
+    "id": "8-22C5",
+    "question": "The high-gain IF amplifiers in a RADAR receiver may amplify a 2 microvolt input signal to an output level of 2 volts. This amount of amplification represents a gain of:",
+    "choices": [
+      "60 db.",
+      "100 db.",
+      "120 db.",
+      "1,000 db."
+    ],
+    "correct": 2,
+    "explanation": "Voltage gain = 2 V / 2 µV = 1,000,000. In dB: 20·log(10⁶) = 120 dB."
+  },
+  {
+    "id": "8-22C6",
+    "question": "In a RADAR receiver AGC and IAGC can vary between:",
+    "choices": [
+      "10 and 15 db.",
+      "20 and 40 db.",
+      "30 and 60 db.",
+      "5 and 30 db."
+    ],
+    "correct": 1,
+    "explanation": "The pool's answer: AGC/IAGC ranges vary between 20 and 40 dB."
+  },
+  {
+    "id": "8-23C1",
+    "question": "Which of the following statements is correct?",
+    "choices": [
+      "The video amplifier is located between the mixer and the I.F. amplifier.",
+      "The video amplifier operates between 60 MHz and 120 Mhz.",
+      "The video amplifier is located between the I.F. amplifier and the display system.",
+      "The video amplifier is located between the local oscillator and the mixer."
+    ],
+    "correct": 2,
+    "explanation": "The video amplifier follows the IF amplifier and video detector, and drives the display.",
+    "choice_notes": [
+      "Mixer → IF amp → detector → video amp.",
+      "That's IF frequency territory.",
+      "",
+      "That's the LO feed."
+    ]
+  },
+  {
+    "id": "8-23C2",
+    "question": "Video amplifiers in pulse RADAR receivers must have a broad bandwidth because:",
+    "choices": [
+      "Weak pulses must be amplified.",
+      "High frequency sine waves must be amplified.",
+      "The RADARs operate at PRFs above 100.",
+      "The pulses produced are normally too wide for video amplification."
+    ],
+    "correct": 0,
+    "explanation": "RADAR video pulses are short, with fast edges, so the video amplifier needs a wide bandwidth (several MHz) to amplify weak pulses without smearing them.",
+    "choice_notes": [
+      "",
+      "Video amps carry pulses, not RF sine waves.",
+      "Not the reason.",
+      "Narrow pulses need the bandwidth."
+    ]
+  },
+  {
+    "id": "8-23C3",
+    "question": "In video amplifiers, compensation for the input and output stage capacitances must be accomplished to prevent distorting the video pulses. This compensation is normally accomplished by connecting:",
+    "choices": [
+      "Inductors in parallel with both the input and output capacitances.",
+      "Resistances in parallel with both the input and output capacitances.",
+      "An inductor in parallel with the input capacitance and an inductor in series with the output capacitance.",
+      "An inductor in series with the input capacitance and an inductor in parallel with the output capacitance."
+    ],
+    "correct": 3,
+    "explanation": "Wideband (peaking) compensation: an inductor in series with the input capacitance (series peaking) and in parallel with the output capacitance (shunt peaking) extends the high-frequency response."
+  },
+  {
+    "id": "8-23C4",
+    "question": "Which of the following signals is not usually an input to the video amplifier?",
+    "choices": [
+      "Resolver.",
+      "Range.",
+      "Brilliance.",
+      "Contrast."
+    ],
+    "correct": 0,
+    "explanation": "Range markers, brilliance and contrast feed the video stage. The resolver signal (antenna angle) goes to the sweep and deflection circuits.",
+    "choice_notes": [
+      "",
+      "Range rings are mixed into the video.",
+      "Brilliance is a video-level setting.",
+      "Contrast is a video-level setting."
+    ]
+  },
+  {
+    "id": "8-23C5",
+    "question": "Which of the following signals are usually an input to the video amplifier?",
+    "choices": [
+      "Range.",
+      "Brilliance.",
+      "Contrast.",
+      "All of the above."
+    ],
+    "correct": 3,
+    "explanation": "The video amplifier mixes the echo video with range rings, and its levels are set by brilliance and contrast. All of the above."
+  },
+  {
+    "id": "8-23C6",
+    "question": "The video (second) detector in a pulse modulated RADAR system would most likely use a/an:",
+    "choices": [
+      "Discriminator detector.",
+      "Diode detector.",
+      "Ratio detector.",
+      "Infinite impedance detector."
+    ],
+    "correct": 1,
+    "explanation": "Pulse RADAR echoes are AM pulses of the IF, so a simple diode envelope detector recovers them. FM discriminators and ratio detectors are for FM.",
+    "choice_notes": [
+      "Discriminator: FM detection or AFC.",
+      "",
+      "Ratio detector: FM broadcast detector.",
+      "Infinite impedance detector: low-distortion AM audio detector, not used for pulses."
+    ]
+  },
+  {
+    "id": "8-24C1",
+    "question": "The AFC system is used to:",
+    "choices": [
+      "Control the frequency of the magnetron.",
+      "Control the frequency of the klystron.",
+      "Control the receiver gain.",
+      "Control the frequency of the incoming pulses."
+    ],
+    "correct": 1,
+    "explanation": "AFC keeps the klystron (local oscillator) tuned so that LO − magnetron stays exactly at the IF.",
+    "choice_notes": [
+      "The magnetron frequency drifts freely. AFC follows it.",
+      "",
+      "That's AGC/STC.",
+      "Incoming echoes are at the magnetron frequency."
+    ]
+  },
+  {
+    "id": "8-24C2",
+    "question": "A circuit used to develop AFC voltage in a RADAR receiver is called the:",
+    "choices": [
+      "Peak detector.",
+      "Crystal mixer.",
+      "Second detector.",
+      "Discriminator."
+    ],
+    "correct": 3,
+    "explanation": "A discriminator converts any IF frequency error into a DC correction voltage: the AFC voltage.",
+    "choice_notes": [
+      "Peak detector: measures amplitude.",
+      "Crystal mixer: converts to IF.",
+      "Second detector: recovers video.",
+      ""
+    ]
+  },
+  {
+    "id": "8-24C3",
+    "question": "In the AFC system, the discriminator compares the frequencies of the:",
+    "choices": [
+      "Magnetron and klystron.",
+      "PRR generator and magnetron.",
+      "Magnetron and crystal detector.",
+      "Magnetron and video amplifier."
+    ],
+    "correct": 0,
+    "explanation": "The AFC mixes a magnetron sample with the klystron output. The discriminator checks whether their difference equals the IF, which compares magnetron and klystron frequencies.",
+    "choice_notes": [
+      "",
+      "The PRR generator is the synchronizer.",
+      "The crystal detector is a mixer.",
+      "The video amp isn't in the AFC loop."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-24C4",
+    "question": "An AFC system keeps the receiver tuned to the transmitted signal by varying the frequency of the:",
+    "choices": [
+      "Magnetron.",
+      "IF amplifier stage.",
+      "Local oscillator.",
+      "Cavity duplexer."
+    ],
+    "correct": 2,
+    "explanation": "The magnetron can't easily be tuned, so AFC varies the local oscillator to follow it.",
+    "choice_notes": [
+      "The magnetron isn't retuned.",
+      "The IF is fixed.",
+      "",
+      "A duplexer isn't tunable."
+    ]
+  },
+  {
+    "id": "8-24C5",
+    "question": "A RADAR transmitter is operating on 3.0 GHz and the reflex klystron local oscillator, operating at 3.060 GHz, develops a 60 MHz IF. If the magnetron drifts higher in frequency, the AFC system must cause the klystron repeller plate to become:",
+    "choices": [
+      "More positive.",
+      "More negative.",
+      "Less positive.",
+      "Less negative."
+    ],
+    "correct": 1,
+    "explanation": "If the magnetron rises, the LO must rise by the same amount to keep a 60 MHz IF. For a reflex klystron, a more negative repeller raises the frequency."
+  },
+  {
+    "id": "8-24C6",
+    "question": "What component is block 50 in Fig. 8A1?",
+    "choices": [
+      "IF amplifier.",
+      "AFC amplifier.",
+      "Discriminator.",
+      "Crystal detector."
+    ],
+    "correct": 2,
+    "explanation": "In Fig. 8A1, block 50 follows the AFC IF amplifier and feeds the AFC output circuit. It's the discriminator that develops the correction voltage.",
+    "figure": "8a1.png",
+    "choice_notes": [
+      "IF amplifier: the main receiver chain.",
+      "Not shown as a block.",
+      "",
+      "Crystal detector: block 49."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-25C1",
+    "question": "The STC circuit is used to:",
+    "choices": [
+      "Increase receiver stability.",
+      "Increase receiver sensitivity.",
+      "Increase receiver selectivity.",
+      "Decrease sea return on a RADAR receiver."
+    ],
+    "correct": 3,
+    "explanation": "STC (sensitivity time control) reduces receiver gain right after each pulse, when strong close-in sea echoes arrive, and lets it recover with time. That suppresses sea return.",
+    "choice_notes": [
+      "STC lowers gain near the ship. It doesn't add stability.",
+      "It DECREASES short-range sensitivity.",
+      "Selectivity is set by the IF filters.",
+      ""
+    ]
+  },
+  {
+    "id": "8-25C2",
+    "question": "The STC circuit:",
+    "choices": [
+      "Increases the sensitivity of the receiver for close targets.",
+      "Decreases sea return on the PPI scope.",
+      "Helps to increase the bearing resolution of targets.",
+      "Increases sea return on the PPI scope."
+    ],
+    "correct": 1,
+    "explanation": "STC lowers sensitivity for the nearest ranges, thinning out the sea return near the centre of the PPI.",
+    "choice_notes": [
+      "It DECREASES close-in sensitivity.",
+      "",
+      "Bearing resolution comes from the beamwidth.",
+      "Reversed."
+    ]
+  },
+  {
+    "id": "8-25C3",
+    "question": "Sea return is:",
+    "choices": [
+      "Sea water that gets into the antenna system.",
+      "The return echo from a target at sea.",
+      "The reflection of RADAR signals from nearby waves.",
+      "None of the above."
+    ],
+    "correct": 2,
+    "explanation": "Sea return (sea clutter) is RADAR energy reflected from nearby waves, appearing as clutter around the centre of the screen.",
+    "choice_notes": [
+      "That's waveguide moisture.",
+      "That's a wanted echo.",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "8-25C4",
+    "question": "Sea clutter on the RADAR scope cannot be effectively reduced using front panel controls. What circuit would you suspect is faulty?",
+    "choices": [
+      "Sensitivity Time Control (STC) circuit.",
+      "False Target Eliminator (FTE) circuit.",
+      "Fast Time Constant (FTC) circuit.",
+      "Intermediate Frequency (IF) circuit."
+    ],
+    "correct": 0,
+    "explanation": "Sea clutter is reduced by the 'Sea' (anti-clutter) control, which adjusts STC. If it has no effect, suspect the STC circuit.",
+    "choice_notes": [
+      "",
+      "FTE: removes second-trace (ambiguous) echoes.",
+      "FTC: differentiates video to reduce RAIN clutter.",
+      "An IF fault affects all echoes, not just sea clutter."
+    ]
+  },
+  {
+    "id": "8-25C5",
+    "question": "What circuit controls the suppression of sea clutter?",
+    "choices": [
+      "EBL circuit.",
+      "STC circuit.",
+      "Local oscillator.",
+      "Audio amplifier."
+    ],
+    "correct": 1,
+    "explanation": "The STC circuit suppresses sea clutter by reducing short-range gain.",
+    "choice_notes": [
+      "EBL: electronic bearing line.",
+      "",
+      "LO: frequency conversion.",
+      "RADAR has no audio."
+    ]
+  },
+  {
+    "id": "8-25C6",
+    "question": "The sensitivity time control (STC) circuit:",
+    "choices": [
+      "Decreases the sensitivity of the receiver for close objects.",
+      "Increases the sensitivity of the receiver for close objects.",
+      "Increases the sensitivity of the receiver for distant objects.",
+      "Decreases the sensitivity of the transmitter for close objects."
+    ],
+    "correct": 0,
+    "explanation": "STC decreases receiver sensitivity for close objects, recovering for distant ones.",
+    "choice_notes": [
+      "",
+      "Reversed.",
+      "STC only reduces near gain.",
+      "STC acts on the receiver, not the transmitter."
+    ]
+  },
+  {
+    "id": "8-26C1",
+    "question": "Prior to making “power-on” measurements on a switching power supply, you should be familiar with the supply because of the following:",
+    "choices": [
+      "You need to know where the filter capacitors are so they can be discharged.",
+      "If it does not use a line isolation transformer you may destroy the supply with grounded test equipment.",
+      "It is not possible to cause a component failure by using ungrounded test equipment.",
+      "So that measurements can be made without referring to the schematic."
+    ],
+    "correct": 1,
+    "explanation": "Many switching supplies rectify the AC line directly with no isolation transformer, so their circuit 'ground' is at line potential. Connecting grounded test equipment can short the line and destroy components."
+  },
+  {
+    "id": "8-26C2",
+    "question": "A constant frequency switching power supply regulator with an input voltage of 165 volts DC, and a switching frequency of 20 kHz, has an “ON” time of 27 microseconds when supplying 1 ampere to its load. What is the output voltage across the load?",
+    "choices": [
+      "It cannot be determined with the information given.",
+      "305.55 volts DC.",
+      "89.1 volts DC.",
+      "165 volts DC."
+    ],
+    "correct": 2,
+    "explanation": "Duty cycle = on-time / period = 27 µs / 50 µs (20 kHz) = 0.54. Output = 165 V x 0.54 = 89.1 V DC."
+  },
+  {
+    "id": "8-26C3",
+    "question": "The circuit shown in Fig. 8C10 is the output of a switching power supply. Measuring from the junction of CR6, CR7 and L1 to ground with an oscilloscope, what waveform would you expect to see?",
+    "choices": [
+      "Filtered DC.",
+      "Pulsating DC at line frequency.",
+      "AC at line frequency.",
+      "Pulsating DC much higher than line frequency."
+    ],
+    "correct": 3,
+    "explanation": "At the junction of CR6, CR7 and L1 the high-frequency output of T1 has been rectified but not yet filtered. That's pulsating DC at the switching frequency, far above line frequency.",
+    "figure": "8c10.png"
+  },
+  {
+    "id": "8-26C4",
+    "question": "With regard to the comparator shown in Fig. 8C11, the input is a sinusoid. Nominal high level output of the comparator is 4.5 volts. Choose the most correct statement regarding the input and output.",
+    "choices": [
+      "The leading edge of the output waveform occurs 180 degrees after positive zero crossing of the input waveform.",
+      "The rising edge of the output waveform trails the positive zero crossing of the input waveform by 45 degrees.",
+      "The rising edge of the output waveform trails the negative zero crossing of the input waveform by 45 degrees.",
+      "The rising edge of the output waveform trails the positive peak of the input waveform by 45 degrees."
+    ],
+    "correct": 0,
+    "explanation": "Fig. 8C11 feeds the signal to the inverting input, so the output goes high when the input goes negative: around the negative-going zero crossing, roughly 180° after the positive zero crossing (slightly delayed by the small hysteresis).",
+    "figure": "8c11.png"
+  },
+  {
+    "id": "8-26C5",
+    "question": "When monitoring the gate voltage of a power MOSFET in the switching power supply of a modern RADAR, you would expect to see the gate voltage change from “low” to “high” by how much?",
+    "choices": [
+      "1 volt to 2 volts.",
+      "300 microvolts to 700 microvolts.",
+      "Greater than 2 volts.",
+      "1.0 volt to 20.0 volts."
+    ],
+    "correct": 2,
+    "explanation": "A power MOSFET needs more than its threshold voltage (2 to 4 V) to switch on. Gate drive typically swings by much more than 2 V (often 10 to 15 V)."
+  },
+  {
+    "id": "8-26C6",
+    "question": "The nominal output high of the comparator shown in Fig. 8C11 is 4.5 volts. Choose the most correct statement which describes the trip points.",
+    "choices": [
+      "Upper trip point is 4.5 volts. Lower trip point is approximately 0 volts.",
+      "Upper trip point is 2.5 volts. Lower trip point is approximately 2.0 volts.",
+      "Upper trip point is 900 microvolts. Lower trip point is approximately 0 volts.",
+      "Upper trip point is +1.285 volts. Lower trip point is -1.285 volts."
+    ],
+    "correct": 3,
+    "explanation": "Fig. 8C11 is a Schmitt trigger: positive feedback through 5k/2k feeds back 2/7 of the output. Trip points are ±4.5 V x 2/7 = ±1.285 V.",
+    "figure": "8c11.png"
+  },
+  {
+    "id": "8-27C1",
+    "question": "One of the best methods of reducing noise in a RADAR receiver is?",
+    "choices": [
+      "Changing the frequency.",
+      "Isolation.",
+      "Replacing the resonant cavity.",
+      "Changing the IF strip."
+    ],
+    "correct": 1,
+    "explanation": "Isolating (shielding and separating) the receiver from noise sources keeps interference out. It's one of the most effective noise remedies.",
+    "choice_notes": [
+      "Changing frequency doesn't reduce receiver noise.",
+      "",
+      "Cavities don't cause the noise.",
+      "Not a method."
+    ]
+  },
+  {
+    "id": "8-27C2",
+    "question": "The primary cause of noise in a RADAR receiver can be attributed to:",
+    "choices": [
+      "Electrical causes.",
+      "Atmospheric changes.",
+      "Poor grounding.",
+      "Thermal noise caused by RADAR receiver components."
+    ],
+    "correct": 3,
+    "explanation": "With no RF amplifier, receiver sensitivity is limited mainly by thermal noise generated in its own components (the mixer and first IF stage).",
+    "choice_notes": [
+      "Too vague.",
+      "Atmospherics are negligible at GHz.",
+      "Poor grounding causes interference, not the basic noise floor.",
+      ""
+    ]
+  },
+  {
+    "id": "8-27C3",
+    "question": "Noise can appear on the LCD as:",
+    "choices": [
+      "Erratic video and sharp changes in intensity.",
+      "Black spots on the screen.",
+      "Changes in bearings.",
+      "None of the above."
+    ],
+    "correct": 0,
+    "explanation": "Noise shows on the display as random, erratic video and sudden changes in brightness: speckle and grass."
+  },
+  {
+    "id": "8-27C4",
+    "question": "RADAR interference on a communications receiver appears as:",
+    "choices": [
+      "A varying tone.",
+      "Static.",
+      "A hissing tone.",
+      "A steady tone."
+    ],
+    "correct": 3,
+    "explanation": "RADAR's pulses repeat at a fixed PRF, so a communications receiver hears them as a steady buzzing tone at the PRF (e.g. 1000 Hz).",
+    "choice_notes": [
+      "The PRF is fixed, so the tone is steady.",
+      "Static is random.",
+      "A hiss is random noise.",
+      ""
+    ]
+  },
+  {
+    "id": "8-27C5",
+    "question": "In a RADAR receiver the most common types of interference are?",
+    "choices": [
+      "Weather and sea return.",
+      "Sea return and thermal.",
+      "Weather and electrical.",
+      "Jamming and electrical."
+    ],
+    "correct": 0,
+    "explanation": "The most common unwanted echoes in marine RADAR are weather (rain) clutter and sea return.",
+    "choice_notes": [
+      "",
+      "Thermal noise is always present but isn't 'interference'.",
+      "Electrical interference is less common.",
+      "Jamming isn't marine."
+    ]
+  },
+  {
+    "id": "8-27C6",
+    "question": "Noise can:",
+    "choices": [
+      "Mask larger targets.",
+      "Change bearings.",
+      "Mask small targets.",
+      "Increase RADAR transmitter interference."
+    ],
+    "correct": 2,
+    "explanation": "Weak echoes from small targets can disappear in the noise. Large targets stand out.",
+    "choice_notes": [
+      "Large targets rise well above the noise.",
+      "Noise doesn't change bearings.",
+      "",
+      "Not related."
+    ]
+  },
+  {
+    "id": "8-28C1",
+    "question": "The purpose of the discriminator circuit in a RADAR set is to:",
+    "choices": [
+      "Discriminate against nearby objects.",
+      "Discriminate against two objects with very similar bearings.",
+      "Generate a corrective voltage for controlling the frequency of the klystron local oscillator.",
+      "Demodulate or remove the intelligence from the FM signal."
+    ],
+    "correct": 2,
+    "explanation": "The discriminator produces the AFC correction voltage that keeps the klystron local oscillator on frequency.",
+    "choice_notes": [
+      "That's STC.",
+      "That's bearing resolution (beamwidth).",
+      "",
+      "That's an FM radio discriminator."
+    ]
+  },
+  {
+    "id": "8-28C2",
+    "question": "The MTI circuit:",
+    "choices": [
+      "Acts as a mixer in a RADAR receiver.",
+      "Is a filter, which blocks out stationary targets, allowing only moving targets to be detected.",
+      "Is used to monitor transmitter interference.",
+      "Will pick up targets, which are not in motion."
+    ],
+    "correct": 1,
+    "explanation": "MTI (moving target indicator) compares successive pulses and cancels echoes that don't change (fixed objects), leaving only moving targets.",
+    "choice_notes": [
+      "The mixer is the crystal.",
+      "",
+      "Not a monitor.",
+      "Reversed."
+    ]
+  },
+  {
+    "id": "8-28C3",
+    "question": "Where is a RF attenuator used in a RADAR unit?",
+    "choices": [
+      "Between the antenna and the receiver.",
+      "Between the magnetron and the antenna.",
+      "Between the magnetron and the AFC section of the receiver.",
+      "Between the AFC section and the klystron."
+    ],
+    "correct": 2,
+    "explanation": "A small sample of the magnetron output is taken for the AFC mixer. The RF attenuator reduces it to a safe level for the crystal.",
+    "choice_notes": [
+      "That path goes through the TR.",
+      "That path goes through the duplexer.",
+      "",
+      "The klystron feeds the AFC mixer directly."
+    ]
+  },
+  {
+    "id": "8-28C4",
+    "question": "The condition known as “glint” refers to a shifting of clutter with each RADAR pulse and can be caused by a:",
+    "choices": [
+      "Improperly functioning MTI filter.",
+      "Memory failure.",
+      "Low AFC voltage.",
+      "Interference from electrical equipment."
+    ],
+    "correct": 0,
+    "explanation": "If the MTI filter doesn't cancel stationary clutter properly, the residue shifts from pulse to pulse ('glint').",
+    "choice_notes": [
+      "",
+      "Memory faults give fixed patterns.",
+      "Low AFC voltage detunes the receiver: weak echoes.",
+      "Electrical interference gives spokes and dots."
+    ]
+  },
+  {
+    "id": "8-28C5",
+    "question": "An ion discharge (TR) cell is used to:",
+    "choices": [
+      "Protect the transmitter from high SWRs.",
+      "Lower the noise figure of the receiver.",
+      "Tune the local oscillator of the RADAR receiver.",
+      "Protect the receiver mixer during the transmit pulse."
+    ],
+    "correct": 3,
+    "explanation": "The TR cell ionizes during the transmitted pulse and shorts the receiver input, protecting the delicate mixer crystal.",
+    "choice_notes": [
+      "That's an isolator or circulator.",
+      "It adds a small loss.",
+      "The AFC tunes the LO.",
+      ""
+    ]
+  },
+  {
+    "id": "8-28C6",
+    "question": "When the receiver employs an MTI circuit:",
+    "choices": [
+      "The receiver gain increases with time.",
+      "Only moving targets will be displayed.",
+      "The receiver AGC circuits are disabled.",
+      "Ground clutter will be free of “rabbits.”"
+    ],
+    "correct": 1,
+    "explanation": "With MTI active, stationary echoes are cancelled and only moving targets are shown.",
+    "choice_notes": [
+      "Gain rising with time is STC.",
+      "",
+      "AGC still works.",
+      "Not related."
+    ]
+  },
+  {
+    "id": "8-29D1",
+    "question": "Modern liquid crystal displays have a pixel count of:",
+    "choices": [
+      "Greater than 200 pixels per inch.",
+      "Greater than 50 pixels per inch.",
+      "Can have no more than 125 pixels per inch.",
+      "Can implement 1,000 pixels per inch."
+    ],
+    "correct": 0,
+    "explanation": "Modern LCD panels exceed 200 pixels per inch."
+  },
+  {
+    "id": "8-29D2",
+    "question": "Voltages used in CRT anode circuits are in what range of value?",
+    "choices": [
+      "0.5-10 mV.",
+      "10-50 kV.",
+      "20-50 mV.",
+      "200-1000 V."
+    ],
+    "correct": 1,
+    "explanation": "CRT anodes operate at roughly 10 to 50 kV to accelerate the electron beam."
+  },
+  {
+    "id": "8-29D3",
+    "question": "The purpose of the aquadag coating on the CRT is:",
+    "choices": [
+      "To protect the electrons from strong electric fields.",
+      "To act as a second anode.",
+      "To attract secondary emissions from the CRT screen.",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "The aquadag (graphite) coating inside the CRT acts as the second anode, collects secondary electrons from the screen, and shields the beam from stray fields. All of the above.",
+    "choice_notes": [
+      "Part of the answer: it shields.",
+      "Part of the answer: it's the second anode.",
+      "Part of the answer: it collects secondaries.",
+      ""
+    ]
+  },
+  {
+    "id": "8-29D4",
+    "question": "LCD patterns are formed when:",
+    "choices": [
+      "Current passes through the crystal causing them to align.",
+      "When voltage is reduced to the raster scan display.",
+      "When the deflection coils are resonant.",
+      "When the ships antenna’s bearing is true North."
+    ],
+    "correct": 0,
+    "explanation": "An applied electric field (voltage and current) through the liquid crystal aligns its molecules, changing how polarized light passes and forming the pattern.",
+    "choice_notes": [
+      "",
+      "That's not how an LCD works.",
+      "LCDs have no deflection coils (that's a CRT).",
+      "Nonsense."
+    ]
+  },
+  {
+    "id": "8-29D5",
+    "question": "In a raster-type display, the electron beam is scanned:",
+    "choices": [
+      "From the center of the display to the outer edges.",
+      "Horizontally and vertically across the CRT face.",
+      "In a rotating pattern which follows the antenna position.",
+      "From one specified X-Y coordinate to the next."
+    ],
+    "correct": 1,
+    "explanation": "A raster display scans line by line, horizontally across and stepping vertically down, like a TV, instead of a rotating radial sweep.",
+    "choice_notes": [
+      "Center to edge = PPI radial sweep.",
+      "",
+      "Rotating with the antenna = PPI.",
+      "Point-to-point = a vector (stroke) display."
+    ]
+  },
+  {
+    "id": "8-29D6",
+    "question": "Select the statement, which is most correct regarding a raster scan display.",
+    "choices": [
+      "Raster displays are the same as conventional T.V. receivers.",
+      "The scan rate for a RADAR system is 30 frames per second.",
+      "Raster scanning is controlled by clock pulses and requires an address bus.",
+      "Raster scanning is not used in RADAR systems."
+    ],
+    "correct": 2,
+    "explanation": "In a raster-scan RADAR display, the picture is held in memory and read out under clock control, with an address bus selecting each pixel location.",
+    "choice_notes": [
+      "Similar idea but different rates and addressing.",
+      "Not fixed at the TV rate.",
+      "",
+      "Modern RADARs use raster displays."
+    ]
+  },
+  {
+    "id": "8-30D1",
+    "question": "What are the usual input signals to the video amplifier?",
+    "choices": [
+      "Low level video.",
+      "Fixed range rings.",
+      "Variable range rings.",
+      "All of the above."
+    ],
+    "correct": 3,
+    "explanation": "The video amplifier receives the low-level echo video plus the fixed and variable range-ring signals. All of the above."
+  },
+  {
+    "id": "8-30D2",
+    "question": "Which of the following would not normally be an input to the video amplifier?",
+    "choices": [
+      "Fixed range rings.",
+      "Variable range rings.",
+      "Resolver signal.",
+      "Low level video."
+    ],
+    "correct": 2,
+    "explanation": "Range rings and echo video feed the video amplifier. The resolver signal (antenna angle) goes to the sweep and deflection circuits.",
+    "choice_notes": [
+      "Range rings are mixed into the video.",
+      "VRM rings are mixed into the video.",
+      "",
+      "Video is the main input."
+    ]
+  },
+  {
+    "id": "8-30D3",
+    "question": "The purpose of the sweep amplifier is to:",
+    "choices": [
+      "Increase the power of the video amplifier.",
+      "Drive the CRT deflection coils.",
+      "Drive the resolver coils.",
+      "All of the above."
+    ],
+    "correct": 1,
+    "explanation": "The sweep amplifier supplies the current to the CRT deflection coils that draws the sweep.",
+    "choice_notes": [
+      "Separate chain.",
+      "",
+      "The resolver is driven from the antenna.",
+      "Only B."
+    ]
+  },
+  {
+    "id": "8-30D4",
+    "question": "How many deflection coils are driven by the sweep amplifier?",
+    "choices": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correct": 2,
+    "explanation": "Two deflection coils (horizontal X and vertical Y) are driven to produce the rotating sweep."
+  },
+  {
+    "id": "8-30D5",
+    "question": "The main purpose of the sweep generator is to provide:",
+    "choices": [
+      "Antenna information.",
+      "Range rings.",
+      "Composite video to the cathode of the CRT.",
+      "The drive signal to the sweep amplifier."
+    ],
+    "correct": 3,
+    "explanation": "The sweep generator produces the ramp (sweep) waveform that drives the sweep amplifier.",
+    "choice_notes": [
+      "Antenna angle comes from the resolver.",
+      "Range rings come from the marker oscillator.",
+      "That's the video amp.",
+      ""
+    ]
+  },
+  {
+    "id": "8-30D6",
+    "question": "The main purpose of the video amplifier is to provide:",
+    "choices": [
+      "Composite video to the cathode of the CRT.",
+      "Resolver signals",
+      "Antenna X and Y signals.",
+      "Provide the drive signal to the sweep amplifier."
+    ],
+    "correct": 0,
+    "explanation": "The video amplifier delivers the composite video (echoes plus markers) to the CRT cathode, modulating beam intensity.",
+    "choice_notes": [
+      "",
+      "Resolver signals go to the sweep circuits.",
+      "X/Y signals go to the sweep circuits.",
+      "That's the sweep generator."
+    ]
+  },
+  {
+    "id": "8-31D1",
+    "question": "Timing circuits are used to provide what function?",
+    "choices": [
+      "Develop synchronizing pulses for the transmitter system.",
+      "Synchronize the antenna and display system.",
+      "Adjust the sea return.",
+      "Control the North Up presentation."
+    ],
+    "correct": 0,
+    "explanation": "The timing circuits (synchronizer) generate the trigger pulses that fire the transmitter (modulator) and keep the rest of the system in step with it.",
+    "choice_notes": [
+      "",
+      "That's the resolver/synchro.",
+      "That's STC.",
+      "That's the gyro input."
+    ]
+  },
+  {
+    "id": "8-31D2",
+    "question": "The circuit that develops timing signals is called the:",
+    "choices": [
+      "Resolver.",
+      "Synchronizer.",
+      "Pulse forming network.",
+      "Video amplifier."
+    ],
+    "correct": 1,
+    "explanation": "The synchronizer develops the system's timing signals.",
+    "choice_notes": [
+      "Resolver: antenna angle.",
+      "",
+      "PFN: sets pulse width in the modulator.",
+      "Video amp: drives the display."
+    ],
+    "explanation_image": "grol_radar_block.png"
+  },
+  {
+    "id": "8-31D3",
+    "question": "Which of the following functions is not affected by the timing circuit?",
+    "choices": [
+      "Resolver output.",
+      "Pulse repetition frequency.",
+      "Sweep drive.",
+      "Modulation."
+    ],
+    "correct": 0,
+    "explanation": "The timing circuit sets the PRF, triggers the modulator and starts the sweep. The resolver output depends only on the antenna's rotation angle.",
+    "choice_notes": [
+      "",
+      "The synchronizer sets the PRF.",
+      "The sweep start is triggered by the synchronizer.",
+      "The modulator is triggered by the synchronizer."
+    ]
+  },
+  {
+    "id": "8-31D4",
+    "question": "The synchronizer primarily affects the following circuit or function:",
+    "choices": [
+      "Mixer.",
+      "Receiver.",
+      "Modulator.",
+      "I.F. Amplifier."
+    ],
+    "correct": 2,
+    "explanation": "The synchronizer's main job is triggering the modulator, which fires the magnetron.",
+    "choice_notes": [
+      "The mixer has no timing.",
+      "Indirectly only.",
+      "",
+      "Indirectly only."
+    ]
+  },
+  {
+    "id": "8-31D5",
+    "question": "The output from the synchronizer usually consists of a:",
+    "choices": [
+      "Sine wave.",
+      "Pulse or square wave.",
+      "Triangle wave.",
+      "None of the above."
+    ],
+    "correct": 1,
+    "explanation": "Timing signals are sharp pulses or square waves with well-defined edges.",
+    "choice_notes": [
+      "Sine waves are poor triggers.",
+      "",
+      "Triangle waves are poor triggers.",
+      "B is correct."
+    ]
+  },
+  {
+    "id": "8-31D6",
+    "question": "The sweep drive is initiated by what circuit?",
+    "choices": [
+      "Resolver.",
+      "Sweep amplifier.",
+      "Video amplifier.",
+      "Synchronizer."
+    ],
+    "correct": 3,
+    "explanation": "The synchronizer's trigger starts each sweep at the same instant the pulse is transmitted.",
+    "choice_notes": [
+      "The resolver sets the DIRECTION of the sweep, not its start.",
+      "The sweep amplifier only amplifies.",
+      "The video amp isn't involved.",
+      ""
+    ]
+  },
+  {
+    "id": "8-32D1",
+    "question": "Accurate range markers must be developed using very narrow pulses. A circuit that could be used to provide these high-quality pulses for the CRT is a:",
+    "choices": [
+      "Ringing oscillator.",
+      "Monostable multivibrator.",
+      "Triggered bi-stable multivibrator.",
+      "Blocking oscillator."
+    ],
+    "correct": 3,
+    "explanation": "A blocking oscillator produces very narrow, sharp, precisely timed pulses, which suits range markers.",
+    "choice_notes": [
+      "Ringing oscillator: makes the marker timing, but its pulses aren't sharp.",
+      "Monostable: gives a set-width pulse but slower edges.",
+      "Bistable flip-flop: changes state, doesn't give narrow pulses.",
+      ""
+    ]
+  },
+  {
+    "id": "8-32D2",
+    "question": "Range markers are determined by:",
+    "choices": [
+      "The CRT.",
+      "The magnetron.",
+      "The timer.",
+      "The video amplifier."
+    ],
+    "correct": 2,
+    "explanation": "Range markers are generated in step with the transmitted pulse by the timer (synchronizer) circuitry.",
+    "choice_notes": [
+      "The CRT only displays.",
+      "The magnetron only transmits.",
+      "",
+      "The video amp just mixes the rings in."
+    ]
+  },
+  {
+    "id": "8-32D3",
+    "question": "A gated LC oscillator, operating at 27 kHz, is being used to develop range markers. If each cycle is converted to a range mark, the range between markers will be:",
+    "choices": [
+      "3 nautical miles.",
+      "6 nautical miles.",
+      "8 nautical miles.",
+      "12 nautical miles."
+    ],
+    "correct": 0,
+    "explanation": "Period = 1 / 27 kHz = 37 µs. At 12.34 µs per RADAR mile, 37 / 12.34 = 3 nm between markers."
+  },
+  {
+    "id": "8-32D4",
+    "question": "What would be the frequency of a range ring marker oscillator generating range rings at 10 nautical miles intervals?",
+    "choices": [
+      "24 kHz",
+      "16 kHz",
+      "12 kHz",
+      "8 kHz"
+    ],
+    "correct": 3,
+    "explanation": "10 nm x 12.34 µs = 123.4 µs per ring, so f = 1 / 123.4 µs ≈ 8.1 kHz."
+  },
+  {
+    "id": "8-32D5",
+    "question": "What is the distance between range markers if the controlling oscillator is operating at 20 kHz?",
+    "choices": [
+      "1 nautical miles.",
+      "2 nautical miles.",
+      "4 nautical miles.",
+      "8 nautical miles."
+    ],
+    "correct": 2,
+    "explanation": "Period = 1 / 20 kHz = 50 µs, and 50 / 12.34 ≈ 4 nm."
+  },
+  {
+    "id": "8-32D6",
+    "question": "What would be the frequency of a range ring marker oscillator generating range rings at intervals of 0.25 nautical miles?",
+    "choices": [
+      "161 kHz",
+      "322 kHz",
+      "644 kHz",
+      "1288 kHz"
+    ],
+    "correct": 1,
+    "explanation": "0.25 nm x 12.34 µs = 3.085 µs, so f = 1 / 3.085 µs ≈ 324 kHz (the pool says 322 kHz)."
+  },
+  {
+    "id": "8-33D1",
+    "question": "The variable range marker signal is normally fed to the input of the:",
+    "choices": [
+      "Sweep amplifier.",
+      "Low voltage power supply regulator.",
+      "Video amplifier.",
+      "Range ring oscillator."
+    ],
+    "correct": 2,
+    "explanation": "The VRM ring is a brightening pulse, so it is mixed into the video amplifier together with the echoes and fixed rings.",
+    "choice_notes": [
+      "The sweep amp drives the coils.",
+      "Not related.",
+      "",
+      "That's the fixed rings."
+    ]
+  },
+  {
+    "id": "8-33D2",
+    "question": "The purpose of the variable range marker is to:",
+    "choices": [
+      "Provide an accurate means of determining the range of a moving target.",
+      "Provide a bearing line between own ship and a moving target.",
+      "Indicate the distance between two different targets.",
+      "Provide a means of calibrating the fixed range rings."
+    ],
+    "correct": 0,
+    "explanation": "The VRM is a single adjustable ring. Set it on a target's echo and read its range precisely, even as the target moves.",
+    "choice_notes": [
+      "",
+      "That's the EBL.",
+      "Not its use (ERBL/cursor).",
+      "It's checked AGAINST the fixed rings."
+    ]
+  },
+  {
+    "id": "8-33D3",
+    "question": "How is the variable range marker usually adjusted for accuracy?",
+    "choices": [
+      "Adjusting the frequency of the VRM oscillator at the maximum range.",
+      "Adjusting the frequency of the VRM oscillator at the minimum range.",
+      "Adjusting the readout to match at the median range ring.",
+      "The minimum and maximum ranges are aligned with the matching fixed range ring."
+    ],
+    "correct": 3,
+    "explanation": "The VRM is calibrated by lining it up with fixed range rings at minimum and maximum range and adjusting until the readout agrees at both."
+  },
+  {
+    "id": "8-33D4",
+    "question": "The panel control for the variable range marker is normally a:",
+    "choices": [
+      "Variable resistor.",
+      "Variable inductance.",
+      "Variable capacitance.",
+      "Variable resolver."
+    ],
+    "correct": 0,
+    "explanation": "On older sets the VRM is adjusted with a front-panel potentiometer (variable resistor) that varies its delay."
+  },
+  {
+    "id": "8-33D5",
+    "question": "An important component of the VRM system is the:",
+    "choices": [
+      "Resolver.",
+      "Interference rejection circuit.",
+      "STC sensitivity control.",
+      "Shift register."
+    ],
+    "correct": 3,
+    "explanation": "In digital RADARs the VRM delay is produced by counting or shifting through digital stages, so a shift register (counter) is a key part."
+  },
+  {
+    "id": "8-33D6",
+    "question": "Which of the following statements about the Variable Range Marker system is correct?",
+    "choices": [
+      "The VRM is an auxiliary output of the fixed range marker oscillator.",
+      "The VRM system develops a single adjustable range ring.",
+      "The VRM system is calibrated using a frequency counter.",
+      "The VRM system is controlled by a crystal oscillator."
+    ],
+    "correct": 1,
+    "explanation": "The VRM system produces one adjustable range ring, separate from the fixed rings.",
+    "choice_notes": [
+      "It's independent.",
+      "",
+      "It's aligned to the fixed rings.",
+      "It's variable, so not crystal-fixed."
+    ]
+  },
+  {
+    "id": "8-34D1",
+    "question": "The purpose of the Electronic Bearing Line is to:",
+    "choices": [
+      "Indicate your own vessel’s heading.",
+      "Measure the bearing of a specific target.",
+      "Indicate True North.",
+      "Display the range of a specific target."
+    ],
+    "correct": 1,
+    "explanation": "The EBL is a line you rotate onto a target to read its bearing.",
+    "choice_notes": [
+      "That's the heading flash.",
+      "",
+      "That's a north marker.",
+      "Range comes from the VRM."
+    ]
+  },
+  {
+    "id": "8-34D2",
+    "question": "The Electronic Bearing Line is:",
+    "choices": [
+      "The ships heading line.",
+      "A line indicating True North.",
+      "Used to mark a target to obtain the distance.",
+      "A line from your own vessel to a specific target."
+    ],
+    "correct": 3,
+    "explanation": "The EBL is a line from your own ship's position (the display centre) out to a chosen target, showing its bearing.",
+    "choice_notes": [
+      "That's the heading line.",
+      "That's a north marker.",
+      "That's the VRM.",
+      ""
+    ]
+  },
+  {
+    "id": "8-34D3",
+    "question": "Which of the following inputs is required to indicate azimuth?",
+    "choices": [
+      "Gyro signals.",
+      "Synchronizer",
+      "Resolver.",
+      "Range rings."
+    ],
+    "correct": 0,
+    "explanation": "To show azimuth relative to north (true bearings), the display needs the ship's heading from the gyrocompass.",
+    "choice_notes": [
+      "",
+      "The synchronizer gives timing.",
+      "The resolver gives the antenna angle RELATIVE to the bow. True azimuth needs the gyro.",
+      "Range rings give distance."
+    ]
+  },
+  {
+    "id": "8-34D4",
+    "question": "Bearing information from the gyro is used to provide the following:",
+    "choices": [
+      "The heading of the nearest target.",
+      "Range and bearing to the nearest target.",
+      "Vessel’s own heading.",
+      "The range of a selected target."
+    ],
+    "correct": 2,
+    "explanation": "The gyro gives the vessel's own heading, used to orient the picture to north and place the heading marker.",
+    "choice_notes": [
+      "Target heading needs tracking (ARPA).",
+      "Range and bearing come from the RADAR itself.",
+      "",
+      "Range comes from the VRM."
+    ]
+  },
+  {
+    "id": "8-34D5",
+    "question": "Which of the following statements about “true bearing” is correct?",
+    "choices": [
+      "The ship’s heading flasher is at the top of the screen.",
+      "True North is at the top of the screen and the heading flasher indicates the vessel’s course.",
+      "The true bearing of the nearest target is indicated.",
+      "The relative bearing of the nearest target is indicated."
+    ],
+    "correct": 1,
+    "explanation": "In a true-bearing (north-up) display, north is at the top and the heading flash points along the ship's course.",
+    "choice_notes": [
+      "That's head-up (relative).",
+      "",
+      "Not the definition.",
+      "Not the definition."
+    ]
+  },
+  {
+    "id": "8-34D6",
+    "question": "A true bearing presentation appears as follows:",
+    "choices": [
+      "The bow of the vessel always points up.",
+      "The course of the five closest targets is displayed.",
+      "North is at the top of the display and the ship’s heading flasher indicates the vessel’s course.",
+      "The course and distance of the closest target is displayed."
+    ],
+    "correct": 2,
+    "explanation": "North-up (true bearing): north at the top, with the heading flasher showing your own course.",
+    "choice_notes": [
+      "That's head-up.",
+      "That's ARPA.",
+      "",
+      "That's ARPA."
+    ]
+  },
+  {
+    "id": "8-35D1",
+    "question": "In a digitized RADAR, the 360 degree sweep is divided into how many digitized segments?",
+    "choices": [
+      "16",
+      "64",
+      "255",
+      "4,096"
+    ],
+    "correct": 3,
+    "explanation": "Digitized RADARs typically divide the 360° sweep into 4096 azimuth segments (12-bit resolution, about 0.088° each)."
+  },
+  {
+    "id": "8-35D2",
+    "question": "While troubleshooting a memory problem in a raster scan RADAR, you discover that the “REFRESH” cycle is not operating correctly. What type of memory circuit are you working on?",
+    "choices": [
+      "SRAM",
+      "DRAM",
+      "ROM",
+      "PROM"
+    ],
+    "correct": 1,
+    "explanation": "DRAM stores bits on tiny capacitors that leak, so it must be refreshed continuously. A faulty refresh cycle means a DRAM problem.",
+    "choice_notes": [
+      "SRAM: flip-flop cells hold data with no refresh.",
+      "",
+      "ROM: fixed contents, never refreshed.",
+      "PROM: programmable once, non-volatile, no refresh."
+    ]
+  },
+  {
+    "id": "8-35D3",
+    "question": "The term DRAM stands for:",
+    "choices": [
+      "Digital refresh access memory.",
+      "Digital recording access memory.",
+      "Dynamic random access memory.",
+      "Digital response area motion."
+    ],
+    "correct": 2,
+    "explanation": "DRAM = dynamic random access memory."
+  },
+  {
+    "id": "8-35D4",
+    "question": "How does the dual memory function reduce sea clutter?",
+    "choices": [
+      "Successive sweeps are digitized and compared. Only signals appearing in both sweeps are displayed.",
+      "The dual memory system makes the desired targets larger.",
+      "It reduces receiver gain for closer signals.",
+      "It increases receiver gain for real targets."
+    ],
+    "correct": 0,
+    "explanation": "Sea clutter moves randomly from sweep to sweep, while real targets stay put. With two memories, only echoes present in both successive sweeps are displayed, so clutter is suppressed (correlation).",
+    "choice_notes": [
+      "",
+      "It doesn't enlarge targets.",
+      "Reducing near gain is STC (analog).",
+      "That's not how it works."
+    ]
+  },
+  {
+    "id": "8-35D5",
+    "question": "How many sequential memory cells with target returns are required to display the target?",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "With dual-memory correlation, an echo must be present in 2 successive memory cells (sweeps) to be displayed."
+  },
+  {
+    "id": "8-35D6",
+    "question": "What is the primary purpose of display system memory?",
+    "choices": [
+      "Eliminate fluctuating targets such as sea return.",
+      "Display stationary targets.",
+      "Display the last available targets prior to a power dropout.",
+      "Store target bearings."
+    ],
+    "correct": 0,
+    "explanation": "Display memory lets the processor compare sweeps and suppress fluctuating returns such as sea clutter.",
+    "choice_notes": [
+      "",
+      "Stationary targets are shown anyway.",
+      "Not its purpose.",
+      "Not its purpose."
+    ]
+  },
+  {
+    "id": "8-36D1",
+    "question": "The ship’s speed indication on the ARPA display can be set manually, but does not change with changes in the vessel’s speed. What other indication would point to a related equipment failure?",
+    "choices": [
+      "“GYRO OUT” is displayed on the ARPA indicator.",
+      "“LOG OUT” is displayed on the ARPA indicator.",
+      "“TARGET LOST” is displayed on the ARPA indicator.",
+      "“NORTH UP” is displayed on the ARPA indicator."
+    ],
+    "correct": 1,
+    "explanation": "Speed comes from the log (speed sensor). If the speed doesn't change and must be set manually, the log input has failed, which ARPA flags as 'LOG OUT'.",
+    "choice_notes": [
+      "GYRO OUT = heading input lost.",
+      "",
+      "TARGET LOST = a tracked target was dropped.",
+      "NORTH UP is a display mode, not a failure."
+    ]
+  },
+  {
+    "id": "8-36D2",
+    "question": "What does the term ARPA/CAS refer to?",
+    "choices": [
+      "The basic RADAR system in operation.",
+      "The device which displays the optional U.S.C.G. Acquisition and Search RADAR information on a CRT display.",
+      "The device which acquires and tracks targets that are displayed on the RADAR indicator’s CRT.",
+      "The device which allows the ship to automatically steer around potential hazards."
+    ],
+    "correct": 2,
+    "explanation": "ARPA/CAS (Automatic RADAR Plotting Aid / Collision Avoidance System) acquires and tracks targets on the display and computes their motion.",
+    "choice_notes": [
+      "That's the RADAR itself.",
+      "Nonsense.",
+      "",
+      "ARPA advises only. It doesn't steer."
+    ]
+  },
+  {
+    "id": "8-36D3",
+    "question": "Which of the following would not be considered an input to the computer of a collision avoidance system?",
+    "choices": [
+      "Own ship’s exact position from navigation satellite receiver.",
+      "Own ship’s gyrocompass heading.",
+      "Own ship’s speed from Doppler log.",
+      "Own ship’s wind velocity from an anemometer."
+    ],
+    "correct": 3,
+    "explanation": "The collision-avoidance computer needs own position, heading (gyro) and speed (log). Wind speed doesn't affect target tracking.",
+    "choice_notes": [
+      "Position is a real input.",
+      "Heading is a real input.",
+      "Speed is a real input.",
+      ""
+    ]
+  },
+  {
+    "id": "8-36D4",
+    "question": "Which answer best describes a line on the display which indicates a target’s position. The speed is shown by the length of the line and the course by the direction of the line.",
+    "choices": [
+      "Vector.",
+      "Electronic Bearing Line.",
+      "Range Marker.",
+      "Heading Marker."
+    ],
+    "correct": 0,
+    "explanation": "A vector is a line from the target whose direction shows its course and whose length shows its speed (distance covered in a set time).",
+    "choice_notes": [
+      "",
+      "EBL: a bearing-measuring line from own ship.",
+      "Range marker: a distance ring.",
+      "Heading marker: own ship's bow direction."
+    ]
+  },
+  {
+    "id": "8-36D5",
+    "question": "What is the purpose or function of the “Trial Mode” used in most ARPA equipment?",
+    "choices": [
+      "It selects trial dots for targets’ recent past positions.",
+      "It is used to display target position and your own ship’s data such as TCPA, CPA, etc.",
+      "It is used to allow results of proposed maneuvers to be assessed.",
+      "None of these."
+    ],
+    "correct": 2,
+    "explanation": "Trial manoeuvre mode lets you simulate a planned course or speed change and see the resulting CPA and TCPA before executing it.",
+    "choice_notes": [
+      "That's past-position 'history' dots.",
+      "That's normal target data display.",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "8-36D6",
+    "question": "The ARPA term CPA refers to:",
+    "choices": [
+      "The furthest point a ship or target will get to your own ship’s bow.",
+      "Direction of target relative to your own ship’s direction.",
+      "The combined detection and processing of targets.",
+      "The closest point a ship or target will approach your own ship."
+    ],
+    "correct": 3,
+    "explanation": "CPA = closest point of approach: the minimum distance a target will come to your ship if both keep course and speed.",
+    "choice_notes": [
+      "Not the definition.",
+      "That's relative bearing.",
+      "Not the definition.",
+      ""
+    ]
+  },
+  {
+    "id": "8-37D1",
+    "question": "The display power supply provides the following:",
+    "choices": [
+      "+18 volts DC for the pulse forming network.",
+      "5 volts DC for logic circuits and  12 volts DC for analog and sweep circuits.",
+      "80 volts AC for the antenna resolver circuits.",
+      "All of the above"
+    ],
+    "correct": 1,
+    "explanation": "Display power supplies typically provide +5 V for digital logic and ±12 V for analog and sweep circuits."
+  },
+  {
+    "id": "8-37D2",
+    "question": "The display power supply provides the following:",
+    "choices": [
+      "5 volts DC for logic circuits.",
+      " 12 volts DC for analog and sweep circuits.",
+      "17kV DC for the CRT HV anode.",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "The display supply provides 5 V logic, ±12 V analog and sweep, and the CRT anode high voltage (≈17 kV). All of the above."
+  },
+  {
+    "id": "8-37D3",
+    "question": "In a display system power supply what is the purpose of the chopper?",
+    "choices": [
+      "It acts as an electronic switch between the raw DC output and the inverter.",
+      "It interrupts the AC supply line at a varying rate depending on the load demands.",
+      "It regulates the 5 volt DC output.",
+      "It pre-regulates the AC input."
+    ],
+    "correct": 0,
+    "explanation": "The chopper is the electronic switch that chops the raw DC into pulses to feed the inverter and transformer.",
+    "choice_notes": [
+      "",
+      "The chopper works on DC after the rectifier.",
+      "Regulation is done by a separate regulator.",
+      "Not a pre-regulator."
+    ]
+  },
+  {
+    "id": "8-37D4",
+    "question": "In a display system power supply, what is the purpose of the inverter?",
+    "choices": [
+      "Inverts the polarity of the DC voltage applied to the voltage regulators.",
+      "Provides the dual polarity 12 volt DC supply.",
+      "Acts as the voltage regulator for the 5 volt DC supply.",
+      "Produces the pulsed DC input voltage to the power transformer."
+    ],
+    "correct": 3,
+    "explanation": "The inverter turns the DC into high-frequency pulsed or AC voltage to drive the power transformer, which can then be small."
+  },
+  {
+    "id": "8-37D5",
+    "question": "What would be a common switching frequency for a display system power supply?",
+    "choices": [
+      "18 kHz",
+      "120 Hz",
+      "60 kHz",
+      "120 kHz"
+    ],
+    "correct": 0,
+    "explanation": "Such supplies typically switch around 18 to 20 kHz, above hearing and allowing small transformers."
+  },
+  {
+    "id": "8-37D6",
+    "question": "What display system power supply output would use a tripler circuit?",
+    "choices": [
+      "The logic circuit supply.",
+      "The sweep circuit supply.",
+      "The HV supply for the CRT anode.",
+      "The resolver drive"
+    ],
+    "correct": 2,
+    "explanation": "A voltage tripler multiplies a lower AC voltage to the many kilovolts needed by the CRT anode.",
+    "choice_notes": [
+      "5 V comes straight from the transformer and rectifier.",
+      "±12 V the same.",
+      "",
+      "The resolver gets AC excitation."
+    ]
+  },
+  {
+    "id": "8-38D1",
+    "question": "The heading flash is a momentary intensification of the sweep line on the PPI presentation. Its function is to:",
+    "choices": [
+      "Alert the operator when a target is within range.",
+      "Alert the operator when shallow water is near.",
+      "Inform the operator of the dead-ahead position on the PPI scope.",
+      "Inform the operator when the antenna is pointed to the rear of the ship."
+    ],
+    "correct": 2,
+    "explanation": "The heading flash brightens the sweep each time the antenna points dead ahead, showing the ship's heading on the PPI.",
+    "choice_notes": [
+      "That's a guard-zone alarm.",
+      "That's the echo sounder.",
+      "",
+      "It marks the bow, not the stern."
+    ]
+  },
+  {
+    "id": "8-38D2",
+    "question": "The major advantage of digitally processing a RADAR signal is:",
+    "choices": [
+      "Digital readouts appear on the RADAR display.",
+      "Enhancement of weak target returns.",
+      "An improved operator interface.",
+      "Rectangular display geometry is far easier to read on the CRT."
+    ],
+    "correct": 1,
+    "explanation": "Digital processing (sweep correlation and averaging) pulls weak target echoes out of noise and clutter.",
+    "choice_notes": [
+      "Readouts are a by-product.",
+      "",
+      "A side benefit.",
+      "Not the main advantage."
+    ]
+  },
+  {
+    "id": "8-38D3",
+    "question": "In order to ensure that a practical filter is able to remove undesired components from the output of an analog-to-digital converter, the sampling frequency should be:",
+    "choices": [
+      "The same as the lowest component of the analog frequency.",
+      "Two times the highest component of the analog frequency.",
+      "Greater than two times the highest component of the sampled frequency.",
+      "The same as the highest component of the sampled frequency."
+    ],
+    "correct": 2,
+    "explanation": "Nyquist: sample at more than twice the highest signal frequency, so the anti-alias filter can practically remove unwanted components."
+  },
+  {
+    "id": "8-38D4",
+    "question": "Bearing resolution is:",
+    "choices": [
+      "The ability to distinguish two adjacent targets of equal distance.",
+      "The ability to distinguish two targets of different distances.",
+      "The ability to distinguish two targets of different elevations.",
+      "The ability to distinguish two targets of different size."
+    ],
+    "correct": 0,
+    "explanation": "Bearing resolution is the ability to show two targets at the same range but slightly different bearings as separate echoes. It depends on horizontal beamwidth.",
+    "choice_notes": [
+      "",
+      "That's RANGE resolution (set by pulse width).",
+      "Not a 2D marine RADAR feature.",
+      "Not a resolution type."
+    ]
+  },
+  {
+    "id": "8-38D5",
+    "question": "The output of an RC integrator, when driven by a square wave with a period of much less than one time constant is a:",
+    "choices": [
+      "Sawtooth wave.",
+      "Sine wave.",
+      "Series of narrow spikes.",
+      "Triangle wave."
+    ],
+    "correct": 3,
+    "explanation": "When the period is much shorter than RC, the capacitor charges and discharges only a little, almost linearly, each half cycle. The output is a small triangle wave."
+  },
+  {
+    "id": "8-38D6",
+    "question": "How do you eliminate stationary objects such as trees, buildings, bridges, etc., from the PPI presentation?",
+    "choices": [
+      "Remove the discriminator from the unit.",
+      "Use a discriminator as a second detector.",
+      "Calibrate the IF circuit.",
+      "Calibrate the local oscillator."
+    ],
+    "correct": 1,
+    "explanation": "The pool's answer: using a discriminator (phase-sensitive detector) as the second detector, as in MTI processing, cancels echoes whose phase doesn't change from pulse to pulse, i.e. stationary objects.",
+    "choice_notes": [
+      "Not how it works.",
+      "",
+      "Calibration doesn't remove fixed targets.",
+      "Calibration doesn't remove fixed targets."
+    ]
+  },
+  {
+    "id": "8-39E1",
+    "question": "Slotted waveguide arrays, when fed from one end exhibit:",
+    "choices": [
+      "Frequency scan.",
+      "High VSWR.",
+      "Poor performance in rain.",
+      "A narrow elevation beam."
+    ],
+    "correct": 0,
+    "explanation": "A slotted waveguide fed from one end radiates a beam whose angle shifts with frequency (frequency scanning), because the slot phasing depends on wavelength.",
+    "choice_notes": [
+      "",
+      "It's matched at the terminated far end.",
+      "Not inherent.",
+      "True, but not caused by end-feeding."
+    ]
+  },
+  {
+    "id": "8-39E2",
+    "question": "A typical shipboard RADAR antenna is a:",
+    "choices": [
+      "Rotary parabolic transducer.",
+      "Slotted waveguide array.",
+      "Phased planar array.",
+      "Dipole."
+    ],
+    "correct": 1,
+    "explanation": "Most ship RADAR antennas are slotted waveguide arrays.",
+    "choice_notes": [
+      "Parabolic dishes: older sets and long range.",
+      "",
+      "Phased arrays: naval and military.",
+      "Dipoles: VHF/HF, not RADAR."
+    ]
+  },
+  {
+    "id": "8-39E3",
+    "question": "Good bearing resolution largely depends upon:",
+    "choices": [
+      "A high transmitter output reading.",
+      "A high duty cycle.",
+      "A narrow antenna beam in the vertical plane.",
+      "A narrow antenna beam in the horizontal plane."
+    ],
+    "correct": 3,
+    "explanation": "Bearing resolution depends on a narrow horizontal beamwidth, i.e. a long antenna.",
+    "choice_notes": [
+      "Power affects range, not resolution.",
+      "Duty cycle doesn't matter here.",
+      "The VERTICAL beam is deliberately wide (for ship roll).",
+      ""
+    ]
+  },
+  {
+    "id": "8-39E4",
+    "question": "The center of the transmitted lobe from a slotted waveguide array is:",
+    "choices": [
+      "Several degrees offset from a line perpendicular to the antenna.",
+      "Perpendicular to the antenna.",
+      "Maximum at the right hand end.",
+      "Maximum at the left hand end."
+    ],
+    "correct": 0,
+    "explanation": "In an end-fed slotted array the main lobe is squinted a few degrees away from the perpendicular. The RADAR compensates for this offset.",
+    "choice_notes": [
+      "",
+      "End-fed slots squint off perpendicular.",
+      "Not end-maximum.",
+      "Not end-maximum."
+    ]
+  },
+  {
+    "id": "8-39E5",
+    "question": "How does antenna length affect the horizontal beamwidth of the transmitted signal?",
+    "choices": [
+      "The longer the antenna the wider the horizontal beamwidth.",
+      "The longer the antenna the narrower the horizontal beamwidth.",
+      "The horizontal beamwidth is not affected by the antenna length.",
+      "None of the above."
+    ],
+    "correct": 1,
+    "explanation": "Beamwidth ≈ 70 λ / length (in degrees), so a longer antenna gives a narrower horizontal beam.",
+    "choice_notes": [
+      "Reversed.",
+      "",
+      "Beamwidth ≈ 70λ / length, so length matters.",
+      ""
+    ]
+  },
+  {
+    "id": "8-39E6",
+    "question": "What is the most common type of RADAR antenna used aboard commercial maritime vessels?",
+    "choices": [
+      "Parabolic.",
+      "Truncated parabolic.",
+      "Slotted waveguide array.",
+      "Multi-element Yagi array."
+    ],
+    "correct": 2,
+    "explanation": "The slotted waveguide array is the standard commercial marine RADAR antenna.",
+    "choice_notes": [
+      "Older or long-range sets.",
+      "Older 'cheese' antennas.",
+      "",
+      "VHF/UHF comms."
+    ]
+  },
+  {
+    "id": "8-40E1",
+    "question": "The VSWR of a microwave transmission line device might be measured using:",
+    "choices": [
+      "A dual directional coupler and a power meter.",
+      "A network analyzer.",
+      "A spectrum analyzer.",
+      "A dual directional coupler, a power meter, and a network analyzer."
+    ],
+    "correct": 3,
+    "explanation": "A dual directional coupler samples forward and reflected power, measured with a power meter or network analyzer, giving the reflection coefficient and hence VSWR.",
+    "choice_notes": [
+      "Partly.",
+      "Partly.",
+      "A spectrum analyzer measures frequency content, not VSWR.",
+      ""
+    ]
+  },
+  {
+    "id": "8-40E2",
+    "question": "The impedance total (ZO) of a transmission line can be calculated by ZO = √L/C when L and C are known. When a section of transmission line contains 250 microhenries of L and 1000 picofarads of C, its impedance total (ZO) will be:",
+    "choices": [
+      "50 ohms.",
+      "250 ohms.",
+      "500 ohms.",
+      "1,000 ohms."
+    ],
+    "correct": 2,
+    "explanation": "Z0 = √(L/C) = √(250 µH / 1000 pF) = √(250,000) = 500 Ω."
+  },
+  {
+    "id": "8-40E3",
+    "question": "If long-length transmission lines are not properly shielded and terminated:",
+    "choices": [
+      "The silicon crystals can be damaged.",
+      "Communications receiver interference might result.",
+      "Overmodulation might result.",
+      "Minimal RF loss can result."
+    ],
+    "correct": 1,
+    "explanation": "Unshielded or mismatched long lines radiate and pick up energy, causing interference to communications receivers.",
+    "choice_notes": [
+      "The TR cell protects the crystals.",
+      "",
+      "RADAR isn't voice-modulated.",
+      "Leaky lines increase loss."
+    ]
+  },
+  {
+    "id": "8-40E4",
+    "question": "A certain length of transmission line has a characteristic impedance of 72 ohms. If the line is cut at its center, each half of the transmission line will have a ZO of:",
+    "choices": [
+      "36 ohms.",
+      "144 ohms.",
+      "72 ohms.",
+      "The exact length must be known to determine Zo."
+    ],
+    "correct": 2,
+    "explanation": "Characteristic impedance depends on the line's geometry and dielectric, not its length. Each half is still 72 Ω."
+  },
+  {
+    "id": "8-40E5",
+    "question": "Standing waves on a transmission line may be an indication that:",
+    "choices": [
+      "All energy is being delivered to the load.",
+      "Source and surge impedances are equal to ZO and ZL.",
+      "The line is terminated in impedance equal to ZO.",
+      "Some of the energy is not absorbed by the load."
+    ],
+    "correct": 3,
+    "explanation": "Standing waves come from reflected energy, which means the load isn't absorbing all of it (a mismatch).",
+    "choice_notes": [
+      "That's the matched case (no standing waves).",
+      "That's the matched case.",
+      "That's the matched case.",
+      ""
+    ]
+  },
+  {
+    "id": "8-40E6",
+    "question": "What precautions should be taken with horizontal waveguide runs?",
+    "choices": [
+      "They should be sloped slightly downwards at the elbow and a small drain hole drilled in the elbow.",
+      "They should be absolutely level.",
+      "They should not exceed 10 feet in length.",
+      "None of the above."
+    ],
+    "correct": 0,
+    "explanation": "Horizontal waveguide runs should slope slightly toward an elbow with a small drain hole, so condensation drains out instead of pooling.",
+    "choice_notes": [
+      "",
+      "Water would pool.",
+      "No such rule.",
+      "A is correct."
+    ]
+  },
+  {
+    "id": "8-41E1",
+    "question": "The position of the PPI scope sweep must indicate the position of the antenna. The sweep and antenna positions are frequently kept in synchronization by the use of:",
+    "choices": [
+      "Synchro systems.",
+      "Servo systems.",
+      "DC positioning motors.",
+      "Differential amplifiers."
+    ],
+    "correct": 0,
+    "explanation": "Synchro systems transmit the antenna's angular position to the display so the sweep rotates in step.",
+    "choice_notes": [
+      "",
+      "Servos drive motors. Synchros send the angle.",
+      "Not position-indicating.",
+      "Not position-indicating."
+    ]
+  },
+  {
+    "id": "8-41E2",
+    "question": "On a basic synchro system, the angular information is carried on the:",
+    "choices": [
+      "DC feedback signal.",
+      "Stator lines.",
+      "Deflection coils.",
+      "Rotor lines."
+    ],
+    "correct": 1,
+    "explanation": "In a synchro, the rotor is excited with AC and the three stator lines carry voltages whose ratios encode the angle.",
+    "choice_notes": [
+      "Synchros run on AC.",
+      "",
+      "Deflection coils are in the display.",
+      "The rotor carries the AC excitation."
+    ]
+  },
+  {
+    "id": "8-41E3",
+    "question": "What is the most common type of antenna position indicating device used in modern RADARs?",
+    "choices": [
+      "Resolvers.",
+      "Servo systems.",
+      "Synchro transmitters.",
+      "Step motors."
+    ],
+    "correct": 0,
+    "explanation": "Modern RADARs typically use resolvers (or encoders) to report antenna position.",
+    "choice_notes": [
+      "",
+      "Servos drive. They don't indicate.",
+      "Synchros: older 3-phase systems.",
+      "Step motors: not used for indication."
+    ]
+  },
+  {
+    "id": "8-41E4",
+    "question": "Which of the following statements about antenna resolvers is correct?",
+    "choices": [
+      "Most resolvers contain a rotor winding and a delta stator winding.",
+      "Resolvers consist of a two rotor windings and two stator windings that are 90 degrees apart.",
+      "The basic resolver contains a rotor winding and two stator windings that are 90 degrees apart.",
+      "Resolvers consist of a \"Y\" connected rotor winding and a delta connected stator winding."
+    ],
+    "correct": 2,
+    "explanation": "A resolver has a rotor winding and two stator windings at 90°, which output sine and cosine of the rotor angle.",
+    "choice_notes": [
+      "A delta stator is a synchro.",
+      "That's a differential resolver, not the basic one.",
+      "",
+      "That's a synchro."
+    ]
+  },
+  {
+    "id": "8-41E5",
+    "question": "An antenna synchro transmitter is composed of the following:",
+    "choices": [
+      "Three rotor and two stator windings.",
+      "Two rotor and three stator windings.",
+      "Three rotor and three stator windings.",
+      "A single rotor and 3 stator windings."
+    ],
+    "correct": 1,
+    "explanation": "The pool's answer: a synchro transmitter has a rotor (two leads) and three stator windings."
+  },
+  {
+    "id": "8-41E6",
+    "question": "RADAR antenna direction must be sent to the display in all ARPAs or RADAR systems. How is this accomplished?",
+    "choices": [
+      "3-phase synchros.",
+      "2-phase resolvers.",
+      "Optical encoders.",
+      "Any of the above."
+    ],
+    "correct": 3,
+    "explanation": "Antenna bearing can be sent by synchros, resolvers or optical encoders. Any of the above."
+  },
+  {
+    "id": "8-42E1",
+    "question": "Waveguides can be constructed from:",
+    "choices": [
+      "Brass.",
+      "Aluminum.",
+      "Copper.",
+      "All of the above."
+    ],
+    "correct": 3,
+    "explanation": "Waveguides are made of good conductors: brass, aluminium or copper (often silver-plated inside)."
+  },
+  {
+    "id": "8-42E2",
+    "question": "A microwave transmission line constructed of a center conductor suspended between parallel conductive ground planes is called:",
+    "choices": [
+      "Microstrip.",
+      "Coax.",
+      "Stripline.",
+      "Waveguide."
+    ],
+    "correct": 2,
+    "explanation": "Stripline: a centre strip conductor sandwiched in dielectric between two ground planes. (Microstrip has one ground plane.)",
+    "choice_notes": [
+      "Microstrip: a conductor above ONE ground plane.",
+      "Coax: a center conductor in a round shield.",
+      "",
+      "Waveguide: a hollow pipe, no center conductor."
+    ]
+  },
+  {
+    "id": "8-42E3",
+    "question": "Waveguide theory is based upon:",
+    "choices": [
+      "The movement of an electromagnetic field.",
+      "Current flow through conductive wires.",
+      "Inductance.",
+      "Resonant charging."
+    ],
+    "correct": 0,
+    "explanation": "A waveguide guides an electromagnetic field (wave) bouncing between its walls. It isn't current flow in a wire.",
+    "choice_notes": [
+      "",
+      "That's ordinary circuits.",
+      "Not the basis.",
+      "That's the PFN."
+    ]
+  },
+  {
+    "id": "8-42E4",
+    "question": "A waveguide is used at RADAR microwave frequencies because:",
+    "choices": [
+      "It is easier to install than other feedline types.",
+      "It is more rugged than other feedline types.",
+      "It is less expensive than other feedline types.",
+      "It has lower transmission losses than other feedline types."
+    ],
+    "correct": 3,
+    "explanation": "At microwave frequencies, waveguide has much lower loss than coax.",
+    "choice_notes": [
+      "Waveguides are harder to install.",
+      "Not the reason.",
+      "Waveguides are more expensive.",
+      ""
+    ]
+  },
+  {
+    "id": "8-42E5",
+    "question": "Waveguide theory is based on the principals of:",
+    "choices": [
+      "Ohm’s Law.",
+      "High standing waves.",
+      "Skin effect and use of ¼ wave stubs.",
+      "None of the above."
+    ],
+    "correct": 2,
+    "explanation": "Waveguide theory can be pictured as a bundle of quarter-wave shorted stubs (which look like open circuits) supporting a centre conductor that has been removed. Skin effect confines currents to the inner surface.",
+    "choice_notes": [
+      "Not the basis.",
+      "Waveguides should have LOW SWR.",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "8-42E6",
+    "question": "How is the signal removed from a waveguide or magnetron?",
+    "choices": [
+      "With a thin wire called a T-hook.",
+      "With a thin wire called a J-Hook.",
+      "With a coaxial connector.",
+      "With a waveguide flange joint."
+    ],
+    "correct": 1,
+    "explanation": "A small wire probe (J-hook) inserted into the waveguide or magnetron couples the energy out.",
+    "choice_notes": [
+      "Not a real term.",
+      "",
+      "Coax is used at S-band in some sets, but J-hook is the answer.",
+      "A flange joins sections. It doesn't extract the signal."
+    ]
+  },
+  {
+    "id": "8-43E1",
+    "question": "A rotary joint is used to:",
+    "choices": [
+      "Couple two waveguides together at right angles.",
+      "Act as a switch between two waveguide runs.",
+      "Connect a stationary waveguide to the antenna array.",
+      "Maintain pressurization at the end of the waveguide."
+    ],
+    "correct": 2,
+    "explanation": "A rotary joint lets the stationary waveguide run feed the rotating antenna.",
+    "choice_notes": [
+      "That's an elbow (E- or H-bend).",
+      "That's a waveguide switch.",
+      "",
+      "That's a pressure window."
+    ]
+  },
+  {
+    "id": "8-43E2",
+    "question": "Resistive losses in a waveguide are very small because:",
+    "choices": [
+      "The inner surface of the waveguide is large.",
+      "The inner surface of the waveguide is small.",
+      "The waveguide does not require a ground connection.",
+      "The heat remains in the waveguide and cannot dissipate."
+    ],
+    "correct": 0,
+    "explanation": "Currents in a waveguide flow over its large inner surface area, so resistance (and loss) is low compared with coax's thin centre conductor.",
+    "choice_notes": [
+      "",
+      "Reversed.",
+      "Irrelevant.",
+      "Nonsense."
+    ]
+  },
+  {
+    "id": "8-43E3",
+    "question": "A right-angle bend in an X-band waveguide must have a radius greater than:",
+    "choices": [
+      "Three inches.",
+      "Six inches.",
+      "One inch.",
+      "Two inches."
+    ],
+    "correct": 3,
+    "explanation": "X-band waveguide bends need a radius larger than about 2 inches (about 2 wavelengths) to avoid reflections."
+  },
+  {
+    "id": "8-43E4",
+    "question": "To insert RF energy into or extract RF energy from a waveguide, which of the following would not be used?",
+    "choices": [
+      "Coupling capacitance.",
+      "Current loop.",
+      "Aperture window.",
+      "Voltage probe."
+    ],
+    "correct": 0,
+    "explanation": "Energy enters or leaves a waveguide via a probe (E-field), a loop (H-field) or an aperture (slot or window). Coupling capacitance isn't a waveguide method.",
+    "choice_notes": [
+      "",
+      "Loops couple the magnetic field.",
+      "Apertures (slots/irises) couple fields.",
+      "Probes couple the electric field."
+    ]
+  },
+  {
+    "id": "8-43E5",
+    "question": "The following is true concerning waveguides:",
+    "choices": [
+      "Conduction is accomplished by the polarization of electromagnetic and electrostatic fields.",
+      "Ancillary deflection is employed.",
+      "The magnetic field is strongest at the center of the waveguide.",
+      "The magnetic field is strongest at the edges of the waveguide."
+    ],
+    "correct": 3,
+    "explanation": "In the dominant TE10 mode the electric field peaks at the centre of the broad wall, and the magnetic field is strongest near the edges (narrow walls).",
+    "choice_notes": [
+      "Garbled.",
+      "Nonsense.",
+      "The magnetic field is strongest at the walls.",
+      ""
+    ]
+  },
+  {
+    "id": "8-43E6",
+    "question": "At microwave frequencies, waveguides are used instead of conventional coaxial transmission lines because:",
+    "choices": [
+      "They are smaller and easier to handle.",
+      "They have considerably less loss.",
+      "They are lighter since they have hollow centers.",
+      "Moisture is never a problem with them."
+    ],
+    "correct": 1,
+    "explanation": "At microwave frequencies coax losses become large. Waveguide carries the power with much less loss.",
+    "choice_notes": [
+      "Waveguides are bigger.",
+      "",
+      "Not the main reason.",
+      "Moisture IS a problem."
+    ]
+  },
+  {
+    "id": "8-44F1",
+    "question": "When you examine the RADAR you notice that there is no target video in the center of the CRT. The blank spot gets smaller in diameter as you increase the range scale. What operator front panel control could be misadjusted?",
+    "choices": [
+      "TUNE.",
+      "Sensitivity Time Control (STC).",
+      "Anti-Clutter Rain (ACR).",
+      "False Target Elimination (FTE)."
+    ],
+    "correct": 1,
+    "explanation": "A blank spot in the centre that shrinks on longer ranges means close-range echoes are being suppressed, typically the STC (sea clutter) control set too high.",
+    "choice_notes": [
+      "TUNE affects all ranges.",
+      "",
+      "ACR/FTC reduces rain clutter everywhere.",
+      "FTE removes second-trace echoes."
+    ]
+  },
+  {
+    "id": "8-44F2",
+    "question": "Range rings on the PPI indicator are oval in shape. Which circuit would you suspect is faulty?",
+    "choices": [
+      "Timing circuit.",
+      "Video amplifier circuit.",
+      "Range marker circuit.",
+      "Sweep generation circuit."
+    ],
+    "correct": 3,
+    "explanation": "Oval range rings mean the X and Y sweep amplitudes aren't equal, pointing to the sweep generation circuits.",
+    "choice_notes": [
+      "Timing faults change spacing, not shape.",
+      "The video amp affects brightness.",
+      "The range marker sets spacing.",
+      ""
+    ]
+  },
+  {
+    "id": "8-44F3",
+    "question": "What would be the most likely defective area when there is no target video in the center of the CRT and the blank spot gets smaller in diameter as your range scale is increased?",
+    "choices": [
+      "The TR (TRL) Cell.",
+      "The local oscillator is misadjusted.",
+      "Video amplifier circuit.",
+      "The IF amplifier circuit."
+    ],
+    "correct": 0,
+    "explanation": "A blank centre can mean the TR cell is recovering too slowly after each pulse (de-ionizing late), keeping the receiver muted for the first part of each sweep.",
+    "choice_notes": [
+      "",
+      "A mistuned LO weakens ALL echoes.",
+      "Video amp faults are uniform.",
+      "IF amp faults are uniform."
+    ]
+  },
+  {
+    "id": "8-44F4",
+    "question": "While the vessel is docked the presentation of the pier is distorted near the center of the PPI with the pier appearing to bend in a concave fashion. This is a primary indication of what?",
+    "choices": [
+      "The deflection coils need adjusting.",
+      "The centering magnets at the CRT neck need adjusting.",
+      "The waveguide compensation delay line needs adjusting.",
+      "The CRT filaments are weakening."
+    ],
+    "correct": 2,
+    "explanation": "The waveguide compensation delay line corrects for the delay in long waveguide runs. If it's misadjusted, near-range objects are displaced and a straight pier looks bent near the centre.",
+    "choice_notes": [
+      "The deflection coils affect the whole picture.",
+      "Centering moves the picture.",
+      "",
+      "Weak filaments dim the picture."
+    ]
+  },
+  {
+    "id": "8-44F5",
+    "question": "In a RADAR using digital video processing, a bright, wide ring appears at a fixed distance from the center of the display on all digital ranges. The transmitter is operating normally. What receiver circuit would you suspect is causing the problem?",
+    "choices": [
+      "VRM circuit.",
+      "Video storage RAM or shift register.",
+      "Range ring generator.",
+      "EBL circuit."
+    ],
+    "correct": 1,
+    "explanation": "A fixed ring at the same distance on all digital ranges points to a stuck bit in the video storage (RAM or shift register).",
+    "choice_notes": [
+      "The VRM is a thin, adjustable ring.",
+      "",
+      "Range rings are thin, multiple and scale with range.",
+      "The EBL is a line."
+    ]
+  },
+  {
+    "id": "8-44F6",
+    "question": "The raster scan RADAR display has missing video in a rectangular block on the screen. Where is the most likely problem area?",
+    "choices": [
+      "Horizontal sweep circuit.",
+      "Power supply.",
+      "Memory area failure.",
+      "Vertical blanking pulse."
+    ],
+    "correct": 2,
+    "explanation": "A rectangular block of missing video on a raster display maps to a block of memory addresses, so suspect a memory failure.",
+    "choice_notes": [
+      "Sweep faults give lines or collapse.",
+      "A power fault kills everything.",
+      "",
+      "Blanking faults give retrace lines."
+    ]
+  },
+  {
+    "id": "8-45F1",
+    "question": "A circuit card in a RADAR system has just been replaced with a spare card. You notice the voltage level at point E in Fig. 8F12 is negative 4.75 volts when the inputs are all at 5 volts. The problem is:",
+    "choices": [
+      "The 25 K resistor is open.",
+      "The 100 K resistor has been mistakenly replaced with a 50 K resistor.",
+      "The op amp is at the rail voltage.",
+      "The 50 K resistor has been mistakenly replaced with a 25 K resistor."
+    ],
+    "correct": 3,
+    "explanation": "Fig. 8F12: with 5 V on all inputs, E should be −10k x 5 x (1/200k + 1/100k + 1/50k + 1/25k) = −3.75 V. −4.75 V is 1 V more, exactly what doubling the 50k input's current would add (5/25k − 5/50k = 0.1 mA x 10k = 1 V).",
+    "figure": "8f12.png"
+  },
+  {
+    "id": "8-45F2",
+    "question": "A defective crystal in the AFC section will cause:",
+    "choices": [
+      "No serious problems.",
+      "Bright flashing pie sections on the PPI.",
+      "Spiking on the PPI.",
+      "Vertical spikes that constantly move across the screen."
+    ],
+    "correct": 1,
+    "explanation": "A failed AFC crystal lets the local oscillator drift, so the picture fades in and out in bright flashing pie-shaped sectors as tuning wanders.",
+    "choice_notes": [
+      "The AFC loses lock.",
+      "",
+      "Not this symptom.",
+      "That's interference."
+    ]
+  },
+  {
+    "id": "8-45F3",
+    "question": "The RADAR display has sectors of solid video (spoking). What would be the first thing to check?",
+    "choices": [
+      "Antenna information circuits failure.",
+      "Frequency of raster scan.",
+      "For interference from nearby ships.",
+      "Constant velocity of antenna rotation."
+    ],
+    "correct": 2,
+    "explanation": "Sectors (spokes) of solid video are usually interference from another ship's RADAR nearby. Check that first.",
+    "choice_notes": [
+      "Antenna data faults give smearing or rotation.",
+      "Not the first check.",
+      "",
+      "Rotation faults give smearing."
+    ]
+  },
+  {
+    "id": "8-45F4",
+    "question": "In the circuit contained in Fig. 8F12, there are 5 volts present at points B and C, and there are zero volts present at points A and D. What is the voltage at point E?",
+    "choices": [
+      "-1.5 Volts.",
+      "3.75 Volts.",
+      "23.75 Volts.",
+      "4.5 Volts."
+    ],
+    "correct": 0,
+    "explanation": "Fig. 8F12 inverting summer: E = −10k x (5/100k + 5/50k) = −(0.5 + 1.0) = −1.5 V.",
+    "figure": "8f12.png"
+  },
+  {
+    "id": "8-45F5",
+    "question": "If the TR tube malfunctions:",
+    "choices": [
+      "The transmitter might be damaged.",
+      "The receiver might be damaged.",
+      "The klystron might be damaged.",
+      "Magnetron current will increase."
+    ],
+    "correct": 1,
+    "explanation": "If the TR tube fails to fire, the full transmitter pulse reaches the mixer crystal and can destroy the receiver front end.",
+    "choice_notes": [
+      "The transmitter is protected by the ATR.",
+      "",
+      "The klystron isn't in the signal path.",
+      "Not affected."
+    ]
+  },
+  {
+    "id": "8-45F6",
+    "question": "The indicated distance from your own vessel to a lighthouse is found to be in error. What circuit would you suspect?",
+    "choices": [
+      "Range ring oscillator.",
+      "Video amplifier.",
+      "STC circuit.",
+      "FTC circuit."
+    ],
+    "correct": 0,
+    "explanation": "Wrong range readings to a known object point to the range-measuring circuitry: the range ring (marker) oscillator calibration.",
+    "choice_notes": [
+      "",
+      "The video amp affects brightness.",
+      "STC affects near gain.",
+      "FTC affects rain clutter."
+    ]
+  },
+  {
+    "id": "8-46F1",
+    "question": "Silicon crystals are used in RADAR mixer and detector stages. Using an ohmmeter, how might a crystal be checked to determine if it is functional?",
+    "choices": [
+      "Its resistance should be the same in both directions.",
+      "Its resistance should be low in one direction and high in the opposite direction.",
+      "Its resistance cannot be checked with a dc ohmmeter because the crystal acts as a rectifier.",
+      "It would be more appropriate to use a VTVM and measure the voltage drop across the crystal."
+    ],
+    "correct": 1,
+    "explanation": "A good crystal behaves like a diode: low resistance one way and high the other. Equal readings mean it's shorted or open.",
+    "choice_notes": [
+      "That's a short or an open.",
+      "",
+      "Rectification is exactly what an ohmmeter can show.",
+      "Unnecessary."
+    ]
+  },
+  {
+    "id": "8-46F2",
+    "question": "In a RADAR unit, if the crystal mixer becomes defective, replace the:",
+    "choices": [
+      "Crystal only.",
+      "The crystal and the ATR tube.",
+      "The crystal and the TR tube.",
+      "The crystal and the klystron."
+    ],
+    "correct": 2,
+    "explanation": "A burned-out mixer crystal usually means the TR tube let transmitter energy through, so replace both or the new crystal will fail too.",
+    "choice_notes": [
+      "A failed TR probably caused the crystal failure.",
+      "The ATR doesn't protect the crystal.",
+      "",
+      "The klystron isn't the cause."
+    ]
+  },
+  {
+    "id": "8-46F3",
+    "question": "An increase in magnetron current that coincides with a decrease in power output is an indication of what?",
+    "choices": [
+      "The pulse length decreasing.",
+      "A high SWR.",
+      "A high magnetron heater voltage.",
+      "The external magnet weakening."
+    ],
+    "correct": 3,
+    "explanation": "If the magnet weakens, electrons aren't curved enough. They go straight to the anode, so current rises while microwave output falls.",
+    "choice_notes": [
+      "Shorter pulses reduce average current.",
+      "High SWR causes moding and arcing.",
+      "Heater voltage affects emission.",
+      ""
+    ]
+  },
+  {
+    "id": "8-46F4",
+    "question": "It is reported that the RADAR is not receiving small targets. The most likely causes are:",
+    "choices": [
+      "Magnetron, IF amplifier, or receiver tuning.",
+      "PFN, crystals, or processor memory.",
+      "Crystals, local oscillator tuning, or power supply.",
+      "Fuse blown, IF amp, or video processor."
+    ],
+    "correct": 0,
+    "explanation": "Missing small targets means weak echoes or poor sensitivity: low magnetron output, low IF gain, or receiver mistuning.",
+    "choice_notes": [
+      "",
+      "PFN faults affect everything.",
+      "Power supply faults affect everything.",
+      "A blown fuse kills everything."
+    ]
+  },
+  {
+    "id": "8-46F5",
+    "question": "A high magnetron current indicates a/an:",
+    "choices": [
+      "Defective AFC crystal.",
+      "Increase in duty cycle.",
+      "Defective external magnetic field.",
+      "High standing wave ratio (SWR)."
+    ],
+    "correct": 2,
+    "explanation": "High magnetron current indicates a weak or defective magnetic field.",
+    "choice_notes": [
+      "The AFC crystal affects tuning.",
+      "Not the classic indication.",
+      "",
+      "High SWR causes moding and arcing."
+    ]
+  },
+  {
+    "id": "8-46F6",
+    "question": "Low or no mixer current could be caused by:",
+    "choices": [
+      "Local oscillator frequency misadjustment.",
+      "TR cell failure.",
+      "Mixer diode degradation.",
+      "All of the above."
+    ],
+    "correct": 3,
+    "explanation": "Mixer current comes from LO drive into the crystal. It drops if the LO is off frequency or weak, if the TR cell blocks it, or if the mixer diode degrades. All of the above."
+  },
+  {
+    "id": "8-47F1",
+    "question": "If the magnetron is allowed to operate without the magnetic field in place:",
+    "choices": [
+      "Its output will be somewhat distorted.",
+      "It will quickly destroy itself from excessive current flow.",
+      "Its frequency will change slightly.",
+      "Nothing serious will happen."
+    ],
+    "correct": 1,
+    "explanation": "Without the magnetic field, the electrons rush straight from cathode to anode. The magnetron draws huge current and destroys itself.",
+    "choice_notes": [
+      "It won't oscillate.",
+      "",
+      "It won't oscillate at all.",
+      "It will overheat."
+    ]
+  },
+  {
+    "id": "8-47F2",
+    "question": "Targets displayed on the RADAR display are not on the same bearing as their visual bearing. What should you first suspect?",
+    "choices": [
+      "A bad reed relay in the antenna pedestal.",
+      "A sweep length misadjustment.",
+      "One phase of the yoke assembly is open.",
+      "Incorrect antenna position information."
+    ],
+    "correct": 3,
+    "explanation": "If RADAR bearings don't match visual bearings, suspect the antenna position information (heading alignment, synchro or resolver).",
+    "choice_notes": [
+      "Not related.",
+      "Sweep length affects range.",
+      "That distorts the whole picture.",
+      ""
+    ]
+  },
+  {
+    "id": "8-47F3",
+    "question": "Loss of distant targets during and immediately after wet weather indicates:",
+    "choices": [
+      "A leak in waveguide or rotary joint.",
+      "High atmospheric absorption.",
+      "Dirt or soot on the rotary joint.",
+      "High humidity in the transmitter causing power supply loading."
+    ],
+    "correct": 0,
+    "explanation": "Water entering a leaking waveguide or rotary joint absorbs and reflects energy, reducing range until it dries.",
+    "choice_notes": [
+      "",
+      "That would be immediate and natural, not a fault.",
+      "Dirt gives steady loss.",
+      "Not related."
+    ]
+  },
+  {
+    "id": "8-47F4",
+    "question": "In a marine RADAR set, a high VSWR is indicated at the magnetron output. The waveguide and rotary joint appear to be functioning properly. What component may be malfunctioning?",
+    "choices": [
+      "The magnetron",
+      "The waveform generator",
+      "The STC circuit",
+      "The waveguide array termination"
+    ],
+    "correct": 3,
+    "explanation": "With the waveguide and rotary joint OK, high VSWR points to the antenna itself, e.g. a failed termination load at the end of the slotted array.",
+    "choice_notes": [
+      "Possible, but the question points to the far end.",
+      "Not an RF component.",
+      "Not an RF component.",
+      ""
+    ]
+  },
+  {
+    "id": "8-47F5",
+    "question": "On a vessel with two RADARs, one has a different range indication on a specific target than the other. How would you determine which RADAR is incorrect?",
+    "choices": [
+      "Check the sweep and timing circuits of both indicators for correct readings.",
+      "Triangulate target using the GPS and visual bearings.",
+      "Check antenna parallax.",
+      "Use the average of the two indications and adjust both for that amount."
+    ],
+    "correct": 0,
+    "explanation": "Range accuracy depends on each indicator's sweep and timing. Check both against known references to find the one in error.",
+    "choice_notes": [
+      "",
+      "Unnecessary.",
+      "Parallax affects bearing, not range.",
+      "Bad practice."
+    ]
+  },
+  {
+    "id": "8-47F6",
+    "question": "An increase in the deflection on the magnetron current meter could likely be caused by:",
+    "choices": [
+      "Insufficient pulse amplitude from the modulator.",
+      "Too high a B1 level on the magnetron.",
+      "A decrease of the magnetic field strength.",
+      "A lower duty cycle, as from 0.0003 to 0.0002."
+    ],
+    "correct": 2,
+    "explanation": "A weaker magnetic field lets more electrons reach the anode, so magnetron current rises.",
+    "choice_notes": [
+      "Lower drive = less current.",
+      "Not a term.",
+      "",
+      "A lower duty cycle = less current."
+    ]
+  },
+  {
+    "id": "8-48F1",
+    "question": "A thick layer of rust and corrosion on the surface of the parabolic dish will have what effect?",
+    "choices": [
+      "No noticeable effect.",
+      "Scatter and absorption of RADAR waves.",
+      "Decrease in performance, especially for weak targets.",
+      "Slightly out of focus PPI scope."
+    ],
+    "correct": 2,
+    "explanation": "Corrosion on a reflector surface scatters and absorbs some energy, reducing gain. Weak targets suffer first.",
+    "choice_notes": [
+      "Corrosion does matter.",
+      "Partly true.",
+      "",
+      "Not a focus problem."
+    ]
+  },
+  {
+    "id": "8-48F2",
+    "question": "The echo box is used for:",
+    "choices": [
+      "Testing the wavelength of the incoming echo signal.",
+      "Testing and tuning of the RADAR unit by providing artificial targets.",
+      "Amplification of the echo signal.",
+      "Detection of the echo pulses."
+    ],
+    "correct": 1,
+    "explanation": "An echo box (resonant cavity) rings after each transmitted pulse, giving an artificial target to test and tune overall performance.",
+    "choice_notes": [
+      "Not quite.",
+      "",
+      "It doesn't amplify.",
+      "It doesn't detect."
+    ]
+  },
+  {
+    "id": "8-48F3",
+    "question": "What should be done to the interior surface of a waveguide in order to minimize signal loss?",
+    "choices": [
+      "Fill it with nitrogen gas.",
+      "Paint it with nonconductive paint to prevent rust.",
+      "Keep it as clean as possible.",
+      "Fill it with a high-grade electrical oil."
+    ],
+    "correct": 2,
+    "explanation": "A clean, smooth inner surface keeps resistive and scattering losses low. Dirt and corrosion raise loss.",
+    "choice_notes": [
+      "Nitrogen pressurization keeps moisture out, but cleanliness is the answer.",
+      "Paint adds loss.",
+      "",
+      "Oil adds loss."
+    ]
+  },
+  {
+    "id": "8-48F4",
+    "question": "Which of the following is the most useful instrument for RADAR servicing?",
+    "choices": [
+      "Oscilloscope.",
+      "Frequency Counter.",
+      "R. F. Wattmeter.",
+      "Audio generator."
+    ],
+    "correct": 0,
+    "explanation": "Most RADAR waveforms (triggers, modulator pulses, video, sweeps) are best examined with an oscilloscope.",
+    "choice_notes": [
+      "",
+      "Limited use.",
+      "Limited use.",
+      "RADAR has no audio."
+    ]
+  },
+  {
+    "id": "8-48F5",
+    "question": "A non-magnetic screwdriver should always be used when replacing what component?",
+    "choices": [
+      "TR tube.",
+      "Mixer.",
+      "Video amplifier.",
+      "Magnetron."
+    ],
+    "correct": 3,
+    "explanation": "A magnetron has a powerful permanent magnet. A steel screwdriver can be pulled in, damage it, or weaken the magnet, so use non-magnetic tools.",
+    "choice_notes": [
+      "Not magnetic.",
+      "Not magnetic.",
+      "Not magnetic.",
+      ""
+    ]
+  },
+  {
+    "id": "8-48F6",
+    "question": "What kind of display would indicate water in the waveguide?",
+    "choices": [
+      "Spoking.",
+      "Large circular rings near the center.",
+      "Loss of range rings.",
+      "Wider than normal targets."
+    ],
+    "correct": 1,
+    "explanation": "Water in the waveguide reflects energy, producing extra rings near the centre of the display.",
+    "choice_notes": [
+      "Spoking = interference.",
+      "",
+      "Loss of rings = a marker fault.",
+      "Wide targets = beamwidth or pulse width."
+    ]
+  },
+  {
+    "id": "8-49F1",
+    "question": "Why is coaxial cable often used for S-band installations instead of a waveguide?",
+    "choices": [
+      "Losses can be kept reasonable at S-band frequencies and the installation cost is lower.",
+      "A waveguide will not support the power density required for modern S-band RADAR transmitters.",
+      "S-band waveguide flanges show too much leakage and are unsafe for use near personnel.",
+      "Dimensions for S-band waveguide do not permit a rugged enough installation for use by ships at sea."
+    ],
+    "correct": 0,
+    "explanation": "At S-band (3 GHz), good coax has tolerable loss and is much cheaper and easier to install than the large S-band waveguide.",
+    "choice_notes": [
+      "",
+      "Waveguide handles it fine.",
+      "Nonsense.",
+      "Nonsense."
+    ]
+  },
+  {
+    "id": "8-49F2",
+    "question": "RADAR interference to a communications receiver is eliminated by:",
+    "choices": [
+      "Not operating other devices when RADAR is in use.",
+      "Properly grounding, bonding, and shielding all units.",
+      "Using a high pass filter on the power line.",
+      "Using a link coupling."
+    ],
+    "correct": 1,
+    "explanation": "Proper grounding, bonding and shielding keep RADAR pulses from radiating or conducting into communications receivers.",
+    "choice_notes": [
+      "Unrealistic.",
+      "",
+      "Doesn't address radiated pickup.",
+      "Not related."
+    ]
+  },
+  {
+    "id": "8-49F3",
+    "question": "Why should long horizontal runs of waveguide be avoided?",
+    "choices": [
+      "They must be insulated to prevent electric shock.",
+      "To prevent damage from shipboard personnel.",
+      "To minimize reception of horizontally polarized returns.",
+      "To prevent accumulation of condensation."
+    ],
+    "correct": 3,
+    "explanation": "Condensation collects in horizontal waveguide runs, causing loss and corrosion. Avoid them or slope them to drain.",
+    "choice_notes": [
+      "Not the reason.",
+      "Not the reason.",
+      "Not the reason.",
+      ""
+    ]
+  },
+  {
+    "id": "8-49F4",
+    "question": "Long horizontal sections of waveguides are not desirable because:",
+    "choices": [
+      "Moisture can accumulate in the waveguide.",
+      "The waveguide can sag, causing loss of signal.",
+      "Excessive standing waves can occur.",
+      "The polarization of the signal might shift."
+    ],
+    "correct": 0,
+    "explanation": "Moisture accumulates in long horizontal waveguide sections.",
+    "choice_notes": [
+      "",
+      "Not the reason.",
+      "Not the reason.",
+      "Not the reason."
+    ]
+  },
+  {
+    "id": "8-49F5",
+    "question": "In a RADAR system, waveguides should be installed:",
+    "choices": [
+      "Slightly bent for maximum gain.",
+      "As straight as possible to reduce distortion.",
+      "At 90 degree angles to improve resonance.",
+      "As long as possible for system flexibility."
+    ],
+    "correct": 1,
+    "explanation": "Bends and twists add reflections and loss, so waveguide should run as straight as practical.",
+    "choice_notes": [
+      "Bends add loss.",
+      "",
+      "Nonsense.",
+      "Shortest is best."
+    ]
+  },
+  {
+    "id": "8-49F6",
+    "question": "What is the most important factor to consider in locating the antenna?",
+    "choices": [
+      "Allow the shortest cable/waveguide run.",
+      "Maximum height for best long range operation.",
+      "The antenna is in a location that is not shadowed by other structures.",
+      "Easy access for maintenance."
+    ],
+    "correct": 2,
+    "explanation": "The antenna must have a clear view. Masts and structures that shadow the beam create blind sectors.",
+    "choice_notes": [
+      "Secondary.",
+      "Secondary.",
+      "",
+      "Secondary."
+    ]
+  },
+  {
+    "id": "8-50F1",
+    "question": "Choose the most correct statement with respect to component damage from electrostatic discharge:",
+    "choices": [
+      "ESD damage occurs primarily in passive components which are easily identified and replaced.",
+      "ESD damage occurs primarily in active components which are easily identified and replaced.",
+      "The technician will feel a small static shock and recognize that ESD damage has occurred to the circuit.",
+      "ESD damage may cause immediate circuit failures, but may also cause failures much later at times when the RADAR set is critically needed."
+    ],
+    "correct": 3,
+    "explanation": "ESD often causes latent damage: a weakened junction may work now and fail later, possibly when the RADAR is critically needed."
+  },
+  {
+    "id": "8-50F2",
+    "question": "Before testing a RADAR transmitter, it would be a good idea to:",
+    "choices": [
+      "Make sure no one is on the deck.",
+      "Make sure the magnetron’s magnetic field is far away from the magnetron.",
+      "Make sure there are no explosives or flammable cargo being loaded.",
+      "Make sure the Coast Guard has been notified."
+    ],
+    "correct": 2,
+    "explanation": "RADAR emissions near explosive or flammable cargo operations can ignite vapours. Make sure none is being handled before transmitting."
+  },
+  {
+    "id": "8-50F3",
+    "question": "While making repairs or adjustments to RADAR units:",
+    "choices": [
+      "Wear fire-retardant clothing.",
+      "Discharge all high-voltage capacitors to ground.",
+      "Maintain the filament voltage.",
+      "Reduce the magnetron voltage."
+    ],
+    "correct": 1,
+    "explanation": "RADAR supplies and PFNs store lethal charges. Discharge all high-voltage capacitors to ground before working."
+  },
+  {
+    "id": "8-50F4",
+    "question": "While removing a CRT from its operating casing, it is a good idea to:",
+    "choices": [
+      "Discharge the first anode.",
+      "Test the second anode with your fingertip.",
+      "Wear gloves and goggles.",
+      "Set it down on a hard surface."
+    ],
+    "correct": 2,
+    "explanation": "A CRT is a high-vacuum glass bulb that can implode. Wear gloves and goggles when handling it."
+  },
+  {
+    "id": "8-50F5",
+    "question": "If a CRT is dropped:",
+    "choices": [
+      "Most likely nothing will happen because they are built with durability in mind.",
+      "It might go out of calibration.",
+      "The phosphor might break loose.",
+      "It might implode, causing damage to workers and equipment."
+    ],
+    "correct": 3,
+    "explanation": "A dropped CRT may implode, throwing glass fragments at high speed."
+  },
+  {
+    "id": "8-50F6",
+    "question": "Prior to removing, servicing or making measurements on any solid state circuit boards from the RADAR set, the operator should ensure that:",
+    "choices": [
+      "The proper work surfaces and ESD grounding straps are in place to prevent damage to the boards from electrostatic discharge.",
+      "The waveguide is detached from the antenna to prevent radiation.",
+      "The magnetic field is present to prevent over-current damage or overheating from occurring in the magnetron.",
+      "Only non-conductive tools and devices are used."
+    ],
+    "correct": 0,
+    "explanation": "Use an ESD-safe work surface and grounded wrist straps to protect sensitive solid-state boards."
+  }
+]

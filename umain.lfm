@@ -1,0 +1,258 @@
+object Form1: TForm1
+  Left = 40
+  Height = 1000
+  Top = 30
+  Width = 1820
+  Caption = 'Amateur Radio License Quiz'
+  ClientHeight = 1000
+  ClientWidth = 1820
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clRed
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poScreenCenter
+  LCLVersion = '4.6.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object lblCategory: TLabel
+    Left = 20
+    Height = 20
+    Top = 22
+    Width = 63
+    Caption = 'Category:'
+  end
+  object cmbCategory: TComboBox
+    Left = 100
+    Height = 28
+    Top = 18
+    Width = 425
+    ItemHeight = 20
+    Style = csDropDownList
+    TabOrder = 0
+    OnChange = cmbCategoryChange
+  end
+  object lblPool: TLabel
+    Left = 560
+    Height = 20
+    Top = 22
+    Width = 40
+    Caption = 'Exam:'
+  end
+  object cmbPool: TComboBox
+    Left = 606
+    Height = 28
+    Top = 18
+    Width = 480
+    ItemHeight = 20
+    Style = csDropDownList
+    TabOrder = 6
+    OnChange = cmbPoolChange
+  end
+  object lblScore: TLabel
+    Left = 1721
+    Height = 20
+    Top = 22
+    Width = 79
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight]
+    Caption = 'Score: 0 / 0'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblProgress: TLabel
+    Left = 20
+    Height = 20
+    Top = 70
+    Width = 126
+    Caption = 'Question 1 of 409'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQID: TLabel
+    Left = 20
+    Height = 20
+    Top = 102
+    Width = 47
+    Caption = 'T5A05'
+    Font.Color = clNavy
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQuestion: TLabel
+    Left = 20
+    Height = 120
+    Top = 132
+    Width = 1780
+    AutoSize = False
+    Caption = 'Question text goes here.'
+    Font.Height = -19
+    ParentFont = False
+    WordWrap = True
+  end
+  object rgChoices: TRadioGroup
+    Left = 20
+    Height = 300
+    Top = 267
+    Width = 1780
+    AutoFill = True
+    Caption = ' Click an answer to check it '
+    ChildSizing.LeftRightSpacing = 12
+    ChildSizing.TopBottomSpacing = 8
+    ChildSizing.VerticalSpacing = 10
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 270
+    ClientWidth = 1776
+    Font.Height = -18
+    Items.Strings = (
+      'A.  Placeholder'
+      'B.  Placeholder'
+      'C.  Placeholder'
+      'D.  Placeholder'
+    )
+    ParentFont = False
+    TabOrder = 1
+    OnClick = rgChoicesClick
+  end
+  object lblResult: TLabel
+    Left = 20
+    Height = 80
+    Top = 582
+    Width = 1780
+    AutoSize = False
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object btnBack: TButton
+    Left = 20
+    Height = 42
+    Top = 677
+    Width = 130
+    Caption = '< Back'
+    Enabled = False
+    TabOrder = 5
+    OnClick = btnBackClick
+  end
+  object btnNext: TButton
+    Left = 162
+    Height = 42
+    Top = 677
+    Width = 188
+    Caption = 'Next Question'
+    Enabled = False
+    TabOrder = 2
+    OnClick = btnNextClick
+  end
+  object btnRestart: TButton
+    Left = 362
+    Height = 42
+    Top = 677
+    Width = 212
+    Caption = 'Restart / Reshuffle'
+    TabOrder = 3
+    OnClick = btnRestartClick
+  end
+  object btnWhy: TButton
+    Left = 586
+    Height = 42
+    Top = 677
+    Width = 138
+    Caption = 'Why?'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnWhyClick
+  end
+  object btnRetest: TButton
+    Left = 732
+    Height = 42
+    Top = 677
+    Width = 230
+    Caption = 'Retest Wrong Answers'
+    Enabled = False
+    TabOrder = 7
+    OnClick = btnRetestClick
+  end
+  object btnMock: TButton
+    Left = 970
+    Height = 42
+    Top = 677
+    Width = 180
+    Caption = 'Mock Exam'
+    TabOrder = 8
+    OnClick = btnMockClick
+  end
+  object btnErrorAnalysis: TButton
+    Left = 1162
+    Height = 42
+    Top = 677
+    Width = 180
+    Caption = 'Error Analysis'
+    TabOrder = 9
+    OnClick = btnErrorAnalysisClick
+  end
+  object btnResetErrorHistory: TButton
+    Left = 1354
+    Height = 42
+    Top = 677
+    Width = 210
+    Caption = 'Reset Error History'
+    TabOrder = 10
+    OnClick = btnResetErrorHistoryClick
+  end
+  object lblExplanation: TLabel
+    Left = 20
+    Height = 240
+    Top = 734
+    Width = 1780
+    AutoSize = False
+    Font.Color = clMaroon
+    Font.Height = -18
+    ParentFont = False
+    WordWrap = True
+  end
+  object lblFooter: TLabel
+    Left = 20
+    Height = 1
+    Top = 980
+    Width = 1
+    Font.Color = clGray
+    ParentFont = False
+  end
+  object lblPct: TLabel
+    Left = 1683
+    Height = 19
+    Top = 48
+    Width = 95
+    Alignment = taRightJustify
+    Anchors = [akTop, akRight]
+    AutoSize = False
+    Caption = '0.0'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblpct_unit: TLabel
+    Left = 1787
+    Height = 20
+    Top = 48
+    Width = 13
+    Anchors = [akTop, akRight]
+    Caption = '%'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end
